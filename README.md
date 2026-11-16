@@ -1,18 +1,23 @@
-# E-vindemus — sito web
+# E-vindemus — sito statico per GitHub Pages
 
-Sito statico HTML/CSS/JavaScript di **E-vindemus** per **GitHub Pages**.
-Il repository previsto è `lucamaio/e-vindemus-site` (separato dal progetto WordPress `lucamaio/e-vindemus`).
+## Pagine
+- `index.html` — homepage, servizi, pacchetti e collegamenti
+- `chi-siamo.html` — identità, approccio e metodo
+- `portfolio.html` — quattro campagne dimostrative per attività fittizie, con filtri
+- `faq.html` — domande frequenti
+- `contatti.html` — selezione del pacchetto e contatto WhatsApp
 
-## Configurazione preliminare
-- In `index.html` cerca `const WHATSAPP_NUMERO` e inserisci il numero WhatsApp aziendale completo di prefisso internazionale, senza il carattere `+` e senza spazi.
-- Verifica testi, prezzi e condizioni dei servizi prima della pubblicazione.
-- Le campagne mostrate sono concept dimostrativi di attività fittizie.
+## File condivisi
+- `assets/site-base.css`: stili originali E-vindemus
+- `assets/pages.css`: stile pagine interne, responsive e Liquid Glass
+- `assets/pages.js`: menu, filtri, FAQ native e contatto WhatsApp
+- `assets/config.js`: numero WhatsApp pubblico
 
-## Pubblicazione GitHub Pages
-1. Crea il repository pubblico **e-vindemus-site**, senza inizializzarlo con README, `.gitignore` o licenza.
-2. Carica nella radice del ramo `main` `index.html`, `.nojekyll` e `README.md`.
-3. Vai in **Settings → Pages → Build and deployment**.
-4. Imposta **Source: Deploy from a branch**, **Branch: main** e **Folder: /(root)**. Salva.
-5. L'indirizzo previsto è `https://lucamaio.github.io/e-vindemus-site/` dopo che GitHub ha completato la pubblicazione.
+## Prima della pubblicazione
+Apri `assets/config.js` e sostituisci la stringa vuota di `whatsappNumber` con il numero aziendale completo di prefisso internazionale, senza `+` o spazi. Fino ad allora il pulsante rimane inattivo. Non inserire password o segreti nei file del sito pubblico.
 
-Note: l'abilitazione delle GitHub Pages e la verifica del sito pubblicato devono essere effettuate prima di considerare il sito online.
+Verifica e conferma prezzi, condizioni di vendita e contenuti commerciali. Le quattro campagne del portfolio sono esempi originali per attività fittizie e non collaborazioni reali.
+
+## GitHub Pages
+Imposta **Settings → Pages → Deploy from a branch → main → /(root)**.
+Indirizzo previsto: https://lucamaio.github.io/e-vindemus-site/

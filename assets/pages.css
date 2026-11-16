@@ -1,0 +1,70 @@
+
+/* E-vindemus — pagine interne: Verdigris Atelier / Liquid Glass */
+#ev-vindemus .ev-nav a[aria-current="page"]{color:#a56551;font-weight:800}
+#ev-vindemus .ev-inner-hero{min-height:370px;display:flex;align-items:center;position:relative;isolation:isolate;overflow:hidden;color:#f6f9f2;background:radial-gradient(ellipse 70% 100% at 92% 12%,rgba(107,159,136,.42),transparent 68%),radial-gradient(ellipse 80% 100% at -10% 110%,rgba(198,121,97,.18),transparent 70%),linear-gradient(118deg,#092421,#164139 65%,#295448)}
+#ev-vindemus .ev-inner-hero:before,#ev-vindemus .ev-inner-hero:after{content:"";position:absolute;border:1px solid rgba(248,238,217,.16);border-radius:50%;width:430px;height:430px;right:-105px;top:-85px;pointer-events:none}
+#ev-vindemus .ev-inner-hero:after{width:295px;height:295px;right:-30px;top:-20px;border-color:rgba(248,238,217,.25)}
+#ev-vindemus .ev-inner-hero .ev-layout{padding-top:78px;padding-bottom:88px;width:100%;z-index:1;position:relative}
+#ev-vindemus .ev-breadcrumb{display:flex;gap:9px;align-items:center;color:#d7e6dd;font-size:12px;margin-bottom:25px}
+#ev-vindemus .ev-breadcrumb a{color:#f8dfd3;text-decoration:underline;text-underline-offset:3px}
+#ev-vindemus .ev-page-kicker{font-size:11px;font-weight:800;letter-spacing:.18em;color:#edc0af;margin-bottom:18px}
+#ev-vindemus .ev-inner-hero h1{font-size:clamp(44px,5.8vw,83px);letter-spacing:-.078em;line-height:1.09;max-width:1030px;font-weight:800}
+#ev-vindemus .ev-inner-hero h1 em{font:italic 400 1.03em Georgia,serif;color:#f0c4b4}
+#ev-vindemus .ev-inner-hero p{max-width:730px;margin:23px 0 0;color:#dbe8e0;line-height:1.83;font-size:clamp(15px,1.35vw,18px)}
+#ev-vindemus .ev-page-section{padding-top:105px;padding-bottom:110px}
+#ev-vindemus .ev-page-section--soft{background:linear-gradient(140deg,#f5f8f2 0%,#efece5 100%)}
+#ev-vindemus .ev-page-lead{font-size:16px;line-height:1.9;color:#60776d;max-width:780px;margin:25px 0 0}
+#ev-vindemus .ev-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;margin-top:40px}
+#ev-vindemus .ev-feature-card{border:1px solid rgba(255,255,255,.92);border-radius:16px;min-height:255px;padding:29px;background:linear-gradient(137deg,rgba(255,255,255,.90),rgba(242,248,241,.76));box-shadow:0 15px 43px rgba(20,63,48,.08);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+#ev-vindemus .ev-feature-card .ev-feature-index{display:block;color:#af715e;font-size:12px;font-weight:800;margin-bottom:35px;letter-spacing:.1em}
+#ev-vindemus .ev-feature-card h3{font-size:22px;letter-spacing:-.045em;margin-bottom:11px}
+#ev-vindemus .ev-feature-card p{font-size:14px;color:#60766d;line-height:1.8}
+#ev-vindemus .ev-story{display:grid;grid-template-columns:1fr .88fr;align-items:center;gap:7%}
+#ev-vindemus .ev-story p{color:#5f746c;line-height:1.9;margin:24px 0;font-size:16px}
+#ev-vindemus .ev-story-art{height:390px;overflow:hidden;border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle at 78% 24%,#91b4a0,transparent 46%),linear-gradient(135deg,#245c50,#0e302b)}
+#ev-vindemus .ev-story-art:before,#ev-vindemus .ev-story-art:after{content:"";position:absolute;width:310px;height:310px;border:1px solid rgba(250,213,188,.45);border-radius:50%}
+#ev-vindemus .ev-story-art:after{width:240px;height:240px;border-color:rgba(250,213,188,.65)}
+#ev-vindemus .ev-story-art strong{color:#f6decf;font:800 clamp(90px,13vw,160px)/1 'Manrope',sans-serif;position:relative;z-index:1}
+#ev-vindemus .ev-story-art small{position:absolute;left:25px;bottom:25px;letter-spacing:.16em;color:#f0ccba;font-weight:800;font-size:10px}
+#ev-vindemus .ev-page-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+#ev-vindemus .ev-page-button{display:inline-flex;justify-content:space-between;align-items:center;gap:20px;min-height:50px;padding:13px 19px;background:linear-gradient(135deg,#1b5043,#347363);border-radius:12px;color:#fff!important;font-size:13px;font-weight:800;transition:transform .24s,box-shadow .24s}
+#ev-vindemus .ev-page-button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(20,68,48,.22)}
+#ev-vindemus .ev-page-button--line{border:1px solid #cbdccf;background:rgba(255,255,255,.7);color:#17473b!important}
+#ev-vindemus .ev-page-cta{padding:77px 0;color:#fff;background:linear-gradient(112deg,#0b302b,#285c4e)}
+#ev-vindemus .ev-page-cta .ev-layout{display:flex;justify-content:space-between;align-items:center;gap:32px}
+#ev-vindemus .ev-page-cta h2{font-size:clamp(33px,4.2vw,58px)}
+#ev-vindemus .ev-page-cta h2 em{color:#edbead}
+#ev-vindemus .ev-page-cta p{color:#d0e3d8;font-size:15px;margin:13px 0 0;max-width:560px}
+#ev-vindemus .ev-page-cta .ev-page-button{background:#f7e4d7;color:#17372e!important;white-space:nowrap}
+#ev-vindemus .ev-section-more{display:flex;justify-content:flex-end;margin-top:26px}
+#ev-vindemus .ev-portfolio--page{padding-top:83px;padding-bottom:100px}
+#ev-vindemus .ev-portfolio--page .ev-heading-row{margin-bottom:35px}
+#ev-vindemus .ev-concept-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:35px}
+#ev-vindemus .ev-concept-grid article{padding:22px 20px;background:rgba(255,255,255,.65);border:1px solid #d7e2d9;border-radius:14px}
+#ev-vindemus .ev-concept-grid h3{font-size:15px;margin-bottom:8px}
+#ev-vindemus .ev-concept-grid p{font-size:13px;color:#60766e;line-height:1.7}
+#ev-vindemus .ev-faq-group{display:grid;grid-template-columns:235px minmax(0,1fr);gap:43px;margin-top:45px}
+#ev-vindemus .ev-faq-group h3{color:#215649;font-size:16px;letter-spacing:-.03em;margin:8px 0}
+#ev-vindemus .ev-faq-group .ev-faq-questions{border-top:1px solid #d7e2da}
+#ev-vindemus .ev-faq-group details{border-bottom:1px solid #d7e2da}
+#ev-vindemus .ev-faq-group summary{display:flex;align-items:center;justify-content:space-between;gap:16px;list-style:none;cursor:pointer;padding:22px 4px;font:800 16px/1.5 'Manrope',sans-serif}
+#ev-vindemus .ev-faq-group summary::-webkit-details-marker{display:none}
+#ev-vindemus .ev-faq-group summary span{font-size:22px;color:#ac715d;transition:transform .2s}
+#ev-vindemus .ev-faq-group details[open] summary span{transform:rotate(45deg)}
+#ev-vindemus .ev-faq-group details p{padding:0 36px 22px 4px;color:#597166;line-height:1.9;font-size:14px}
+#ev-vindemus .ev-contact--page{padding-top:80px;padding-bottom:90px}
+#ev-vindemus .ev-contact--page .ev-contact-copy h2{font-size:clamp(39px,5vw,69px)}
+#ev-vindemus .ev-plan-choices{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+#ev-vindemus .ev-plan-choices a{display:inline-flex;align-items:center;border:1px solid #cadfd0;background:rgba(255,255,255,.84);color:#214c41;padding:12px 16px;border-radius:12px;font-size:12px;font-weight:800;transition:background .24s}
+#ev-vindemus .ev-plan-choices a:hover,#ev-vindemus .ev-plan-choices a[aria-current="true"]{background:#245d4d;border-color:#245d4d;color:#fff}
+#ev-vindemus .ev-contact-checklist{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+#ev-vindemus .ev-contact-checklist article{padding:26px;background:rgba(255,255,255,.65);border:1px solid #d9e4d9;border-radius:16px}
+#ev-vindemus .ev-contact-checklist strong{color:#ac6b56;font-size:13px}
+#ev-vindemus .ev-contact-checklist h3{font-size:20px;margin:15px 0 10px}
+#ev-vindemus .ev-contact-checklist p{font-size:13px;color:#60786c;line-height:1.8}
+#ev-vindemus .ev-nav a{white-space:nowrap}
+@media(max-width:1310px){#ev-vindemus .ev-header-cta{display:none}#ev-vindemus .ev-nav{gap:13px}}
+@media(max-width:1030px){#ev-vindemus .ev-nav{display:none;position:absolute;top:100%;right:4%;left:4%;padding:20px;background:rgba(248,249,244,.98);border:1px solid #d4e2d7;border-radius:16px;flex-direction:column;align-items:stretch;box-shadow:0 20px 50px rgba(21,55,43,.16)}#ev-vindemus .ev-nav.ev-open{display:flex}#ev-vindemus .ev-menu-toggle{display:block;margin-left:auto}#ev-vindemus .ev-feature-grid,#ev-vindemus .ev-contact-checklist{grid-template-columns:repeat(2,1fr)}#ev-vindemus .ev-concept-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:780px){#ev-vindemus .ev-page-section{padding-top:75px;padding-bottom:80px}#ev-vindemus .ev-story{grid-template-columns:1fr;gap:30px}#ev-vindemus .ev-faq-group{grid-template-columns:1fr;gap:10px}#ev-vindemus .ev-page-cta .ev-layout{display:block}#ev-vindemus .ev-page-cta .ev-page-button{margin-top:24px}#ev-vindemus .ev-inner-hero .ev-layout{padding-top:70px;padding-bottom:70px}}
+@media(max-width:580px){#ev-vindemus .ev-feature-grid,#ev-vindemus .ev-contact-checklist,#ev-vindemus .ev-concept-grid{grid-template-columns:1fr}#ev-vindemus .ev-story-art{height:285px}#ev-vindemus .ev-inner-hero h1{font-size:clamp(39px,9vw,54px)}#ev-vindemus .ev-page-cta .ev-page-button{white-space:normal}}
+@media(prefers-reduced-motion:reduce){#ev-vindemus .ev-page-button,#ev-vindemus .ev-plan-choices a{transition:none!important}}

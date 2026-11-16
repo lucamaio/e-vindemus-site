@@ -10,6 +10,7 @@
 <meta property="og:description" content="Creatività, design e IA per valorizzare la comunicazione della tua attività.">
 <title>E-vindemus | Creative Studio</title>
 <style>html{scroll-behavior:smooth}body{margin:0;background:#f7f5ef}</style>
+<link rel="stylesheet" href="assets/pages.css">
 </head>
 <body>
 <!-- E-vindemus | Sito statico per GitHub Pages.
@@ -17,15 +18,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="assets/config.js"></script>
 <div id="ev-vindemus">
   <header class="ev-header">
-    <a class="ev-brand" href="#ev-home" aria-label="E-vindemus: torna all'inizio"><span class="ev-monogram">E<span>✦</span></span><span class="ev-wordmark">E-VINDEMUS<small>CREATIVE STUDIO</small></span></a>
-    <nav class="ev-nav" id="ev-navigation" aria-label="Navigazione principale">
-      <a href="#ev-progetti">Portfolio</a><a href="#ev-servizi">Servizi</a><a href="#ev-pacchetti">Pacchetti</a><a href="#ev-metodo">Metodo</a>
-    </nav>
-    <a class="ev-header-cta" href="#ev-contatti">Parliamo del tuo brand <span aria-hidden="true">↗</span></a>
-    <button class="ev-menu-toggle" type="button" aria-expanded="false" aria-controls="ev-navigation" aria-label="Apri il menu">☰</button>
-  </header>
+<a class="ev-brand" href="index.html" aria-label="E-vindemus: torna alla homepage"><span class="ev-monogram">E<span>✦</span></span><span class="ev-wordmark">E-VINDEMUS<small>CREATIVE STUDIO</small></span></a>
+<nav class="ev-nav" id="ev-navigation" aria-label="Navigazione principale">
+<a href="index.html" aria-current="page">Home</a>
+<a href="chi-siamo.html">Chi siamo</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="index.html#ev-servizi">Servizi</a>
+<a href="index.html#ev-pacchetti">Pacchetti</a>
+<a href="faq.html">FAQ</a>
+<a href="contatti.html">Contatti</a>
+</nav>
+<a class="ev-header-cta" href="contatti.html">Parliamo del tuo brand <span aria-hidden="true">↗</span></a>
+<button class="ev-menu-toggle" type="button" aria-expanded="false" aria-controls="ev-navigation" aria-label="Apri il menu">☰</button>
+</header>
 
   <main>
     <section class="ev-hero" id="ev-home">
@@ -35,7 +43,7 @@
           <div class="ev-kicker ev-gold"><span class="ev-kicker-line"></span> ESTETICA. STRATEGIA. INTELLIGENZA ARTIFICIALE.</div>
           <h1>Il tuo brand.<br>Una nuova <em>luce.</em></h1>
           <p>Creatività visiva che lascia il segno. Disegniamo contenuti pubblicitari e campagne digitali per ristoranti, hospitality e attività che vogliono distinguersi.</p>
-          <div class="ev-hero-actions"><a class="ev-btn ev-btn-gold" href="#ev-progetti">Esplora il portfolio <span>↗</span></a><a class="ev-btn ev-btn-line" href="#ev-pacchetti">Scopri i pacchetti <span>→</span></a></div>
+          <div class="ev-hero-actions"><a class="ev-btn ev-btn-gold" href="portfolio.html">Esplora il portfolio <span>↗</span></a><a class="ev-btn ev-btn-line" href="#ev-pacchetti">Scopri i pacchetti <span>→</span></a></div>
           <div class="ev-hero-under"><span class="ev-sparkle">✦</span> Non produciamo soltanto immagini. Costruiamo presenza.</div>
         </div>
         <div class="ev-hero-composition" aria-label="Composizione grafica originale E-vindemus">
@@ -52,7 +60,7 @@
     <section class="ev-intro ev-layout" id="ev-chi-siamo">
       <div class="ev-section-label"><span>01</span> / IL NOSTRO APPROCCIO</div>
       <div class="ev-intro-content ev-reveal"><h2>Non basta essere visti.<br><em>Bisogna essere ricordati.</em></h2><p>In E-vindemus trasformiamo idee, prodotti e atmosfere in comunicazione visiva contemporanea. Usiamo l'intelligenza artificiale come strumento creativo e il design come linguaggio: ogni progetto nasce dall'identità della tua attività.</p><div class="ev-chips"><span>Direzione creativa</span><span>Design su misura</span><span>AI-powered</span><span>Formati social</span></div></div>
-    </section>
+    <div class="ev-layout ev-section-more"><a class="ev-page-button ev-page-button--line" href="chi-siamo.html">Scopri chi siamo <span aria-hidden="true">↗</span></a></div></section>
 
     <section class="ev-portfolio ev-layout" id="ev-progetti">
       <div class="ev-heading-row ev-reveal"><div><div class="ev-section-label"><span>02</span> / PORTFOLIO</div><h2>Il nostro <em>laboratorio</em><br>di idee.</h2></div><p>Quattro campagne originali, progettate per marchi completamente immaginari. Esempi di stile, atmosfera e possibilità.</p></div>
@@ -64,7 +72,7 @@
         <article class="ev-project ev-reveal" data-category="lifestyle"><div class="ev-art ev-art-retail"><div class="ev-art-top"><span>MIRAVERA ATELIER</span><span>CONCEPT 004</span></div><svg class="ev-retail-illustration" viewBox="0 0 520 520" role="img" aria-label="Illustrazione originale di una confezione di prodotto luxury con dettagli blu e oro"><defs><linearGradient id="ev-bottle" x2="1" y2="1"><stop stop-color="#e3bc75"/><stop offset=".5" stop-color="#fff0cb"/><stop offset="1" stop-color="#b98743"/></linearGradient><linearGradient id="ev-box" x2="1" y2="1"><stop stop-color="#24486a"/><stop offset="1" stop-color="#071b32"/></linearGradient></defs><ellipse cx="270" cy="425" rx="177" ry="33" fill="#091728" opacity=".25"/><rect x="95" y="94" width="223" height="311" rx="12" fill="url(#ev-box)" stroke="#dfbc78" stroke-width="4"/><rect x="113" y="111" width="186" height="277" fill="none" stroke="#dfbc78" opacity=".6"/><path d="M206 170l28 34-28 34-28-34z" fill="none" stroke="#e8c783" stroke-width="4"/><path d="M185 279h42M181 293h50" stroke="#e8c783" stroke-width="3"/><rect x="259" y="171" width="161" height="221" rx="24" fill="url(#ev-bottle)" stroke="#fff2d5" stroke-width="5"/><rect x="313" y="135" width="54" height="43" rx="5" fill="#c8a56b"/><rect x="303" y="117" width="73" height="23" rx="4" fill="#0b2540" stroke="#d8b475" stroke-width="3"/><rect x="285" y="241" width="110" height="88" fill="#f4e5c7"/><text x="340" y="276" text-anchor="middle" font-size="12" fill="#152f4c" font-family="Georgia" font-weight="bold">MIRAVERA</text><path d="M300 292h80" stroke="#b99554"/><text x="340" y="311" text-anchor="middle" font-size="8" letter-spacing="2" fill="#152f4c">ATELIER</text><path d="M55 145l14 14-14 14-14-14zM456 248l11 11-11 11-11-11z" fill="#d9b16c"/></svg><div class="ev-art-text"><small>PERSONALITÀ, IN OGNI DETTAGLIO.</small><strong>LA FORMA<br>DEL <i>DESIDERIO.</i></strong><span>RETAIL · PRODUCT CAMPAIGN</span></div><div class="ev-art-corner">✦</div></div><div class="ev-project-info"><div><span>04 / LIFESTYLE</span><h3>Miravera Atelier</h3><p>Concept di lancio per un marchio lifestyle immaginario</p></div><span class="ev-project-arrow">↗</span></div></article>
       </div>
       <p class="ev-portfolio-disclaimer"><span>✦</span> Tutte le grafiche e le denominazioni di questa sezione sono concept originali e dimostrativi, non lavori commissionati né offerte di attività reali. Verifica la disponibilità dei nomi prima di qualsiasi utilizzo commerciale.</p>
-    </section>
+    <div class="ev-section-more"><a class="ev-page-button" href="portfolio.html">Vai al portfolio completo <span aria-hidden="true">↗</span></a></div></section>
 
     <section class="ev-services" id="ev-servizi"><div class="ev-layout"><div class="ev-heading-row ev-reveal"><div><div class="ev-section-label ev-light-label"><span>03</span> / COSA CREIAMO</div><h2>Ogni idea merita<br>una forma <em>unica.</em></h2></div><p>Un unico linguaggio creativo, tanti modi per raccontare la tua attività.</p></div><div class="ev-services-grid">
       <article class="ev-service"><div class="ev-service-head"><span>01 / SOCIAL MEDIA</span><span>↗</span></div><div class="ev-service-icon">◉</div><h3>Grafiche social</h3><p>Post, stories, caroselli e contenuti visuali su misura per Instagram e Facebook.</p></article>
@@ -74,14 +82,14 @@
     </div></div></section>
 
     <section class="ev-pricing ev-layout" id="ev-pacchetti"><div class="ev-heading-row ev-reveal"><div><div class="ev-section-label"><span>04</span> / SOLUZIONI MENSILI</div><h2>La creatività, <em>su misura.</em></h2></div><p>Tre formule semplici per dare continuità alla comunicazione del tuo brand.</p></div><div class="ev-price-grid">
-      <article class="ev-plan"><div class="ev-plan-title"><small>01 / ESSENTIAL</small><span>✧</span></div><h3>Starter</h3><p>Per dare nuova energia ai contenuti della tua attività.</p><div class="ev-price"><strong>89 €</strong><span>/ mese</span></div><div class="ev-rule"></div><ul><li>4 grafiche originali</li><li>4 adattamenti per stories</li><li>Formati Instagram / Facebook</li><li>1 revisione per grafica</li></ul><a href="#ev-contatti" class="ev-plan-btn" data-plan="Starter">Richiedi Starter <span>↗</span></a></article>
-      <article class="ev-plan ev-plan-highlight"><div class="ev-plan-badge">IL PUNTO DI PARTENZA IDEALE</div><div class="ev-plan-title"><small>02 / GROWTH</small><span>✦</span></div><h3>Business</h3><p>Per comunicare con una presenza più costante e riconoscibile.</p><div class="ev-price"><strong>169 €</strong><span>/ mese</span></div><div class="ev-rule"></div><ul><li>8 grafiche originali</li><li>8 adattamenti per stories</li><li>Testi promozionali dedicati</li><li>1 revisione per grafica</li></ul><a href="#ev-contatti" class="ev-plan-btn" data-plan="Business">Richiedi Business <span>↗</span></a></article>
-      <article class="ev-plan"><div class="ev-plan-title"><small>03 / SIGNATURE</small><span>✧</span></div><h3>Premium</h3><p>Per costruire campagne visive più complete e articolate.</p><div class="ev-price"><strong>249 €</strong><span>/ mese</span></div><div class="ev-rule"></div><ul><li>12 grafiche originali</li><li>12 adattamenti per stories</li><li>Testi promozionali dedicati</li><li>1 locandina extra</li><li>1 revisione per grafica</li></ul><a href="#ev-contatti" class="ev-plan-btn" data-plan="Premium">Richiedi Premium <span>↗</span></a></article>
+      <article class="ev-plan"><div class="ev-plan-title"><small>01 / ESSENTIAL</small><span>✧</span></div><h3>Starter</h3><p>Per dare nuova energia ai contenuti della tua attività.</p><div class="ev-price"><strong>89 €</strong><span>/ mese</span></div><div class="ev-rule"></div><ul><li>4 grafiche originali</li><li>4 adattamenti per stories</li><li>Formati Instagram / Facebook</li><li>1 revisione per grafica</li></ul><a href="contatti.html?piano=Starter" class="ev-plan-btn" data-plan="Starter">Richiedi Starter <span>↗</span></a></article>
+      <article class="ev-plan ev-plan-highlight"><div class="ev-plan-badge">IL PUNTO DI PARTENZA IDEALE</div><div class="ev-plan-title"><small>02 / GROWTH</small><span>✦</span></div><h3>Business</h3><p>Per comunicare con una presenza più costante e riconoscibile.</p><div class="ev-price"><strong>169 €</strong><span>/ mese</span></div><div class="ev-rule"></div><ul><li>8 grafiche originali</li><li>8 adattamenti per stories</li><li>Testi promozionali dedicati</li><li>1 revisione per grafica</li></ul><a href="contatti.html?piano=Business" class="ev-plan-btn" data-plan="Business">Richiedi Business <span>↗</span></a></article>
+      <article class="ev-plan"><div class="ev-plan-title"><small>03 / SIGNATURE</small><span>✧</span></div><h3>Premium</h3><p>Per costruire campagne visive più complete e articolate.</p><div class="ev-price"><strong>249 €</strong><span>/ mese</span></div><div class="ev-rule"></div><ul><li>12 grafiche originali</li><li>12 adattamenti per stories</li><li>Testi promozionali dedicati</li><li>1 locandina extra</li><li>1 revisione per grafica</li></ul><a href="contatti.html?piano=Premium" class="ev-plan-btn" data-plan="Premium">Richiedi Premium <span>↗</span></a></article>
     </div><p class="ev-pricing-note">Prezzi indicativi di lancio da confermare prima della vendita. I pacchetti comprendono la creazione dei materiali, non la pubblicazione sui social, gli investimenti pubblicitari o la stampa. Imposte e condizioni contrattuali da definire.</p></section>
 
     <section class="ev-process" id="ev-metodo"><div class="ev-layout"><div class="ev-section-label"><span>05</span> / COME LAVORIAMO</div><div class="ev-heading-row ev-reveal"><h2>Dall'intuizione<br>al <em>risultato.</em></h2><p>Un percorso creativo semplice, trasparente e sempre condiviso.</p></div><div class="ev-steps"><article><span>01</span><div class="ev-step-mark">◎</div><h3>Ascoltiamo</h3><p>Ci racconti la tua attività e l'obiettivo che vuoi raggiungere.</p></article><article><span>02</span><div class="ev-step-mark">✦</div><h3>Immaginiamo</h3><p>Progettiamo stile, messaggio e direzione creativa.</p></article><article><span>03</span><div class="ev-step-mark">↺</div><h3>Perfezioniamo</h3><p>Raccogliamo il tuo feedback e rifiniamo le grafiche.</p></article><article><span>04</span><div class="ev-step-mark">↗</div><h3>Consegniamo</h3><p>Ricevi i materiali nei formati concordati, pronti all'uso.</p></article></div></div></section>
 
-    <section class="ev-faq ev-layout" id="ev-faq"><div><div class="ev-section-label"><span>06</span> / FAQ</div><h2>Hai delle <em>domande?</em></h2><p>Le risposte principali prima di iniziare una collaborazione.</p></div><div class="ev-faq-items"><details><summary>Le immagini saranno personalizzate per il mio locale?<span>+</span></summary><p>Sì. Ogni proposta viene adattata al tuo brand, alla tua identità visiva e ai materiali che ci fornisci. Per rappresentare piatti e ambienti reali preferiamo usare foto autentiche.</p></details><details><summary>Posso acquistare una sola grafica?<span>+</span></summary><p>Sì, possiamo valutare singole locandine, eventi, promozioni e materiali su preventivo.</p></details><details><summary>Gestite anche i profili Instagram e Facebook?<span>+</span></summary><p>I pacchetti indicati comprendono la progettazione e la consegna delle grafiche, ma non la pubblicazione o la gestione continuativa dei profili.</p></details><details><summary>Posso chiedere modifiche?<span>+</span></summary><p>È prevista una revisione per ogni grafica. Eventuali ulteriori interventi vengono preventivati separatamente.</p></details></div></section>
+    <section class="ev-faq ev-layout" id="ev-faq"><div><div class="ev-section-label"><span>06</span> / FAQ</div><h2>Hai delle <em>domande?</em></h2><p>Le risposte principali prima di iniziare una collaborazione.</p></div><div class="ev-faq-items"><details><summary>Le immagini saranno personalizzate per il mio locale?<span>+</span></summary><p>Sì. Ogni proposta viene adattata al tuo brand, alla tua identità visiva e ai materiali che ci fornisci. Per rappresentare piatti e ambienti reali preferiamo usare foto autentiche.</p></details><details><summary>Posso acquistare una sola grafica?<span>+</span></summary><p>Sì, possiamo valutare singole locandine, eventi, promozioni e materiali su preventivo.</p></details><details><summary>Gestite anche i profili Instagram e Facebook?<span>+</span></summary><p>I pacchetti indicati comprendono la progettazione e la consegna delle grafiche, ma non la pubblicazione o la gestione continuativa dei profili.</p></details><details><summary>Posso chiedere modifiche?<span>+</span></summary><p>È prevista una revisione per ogni grafica. Eventuali ulteriori interventi vengono preventivati separatamente.</p></details></div><div class="ev-section-more"><a class="ev-page-button ev-page-button--line" href="faq.html">Leggi tutte le FAQ <span aria-hidden="true">↗</span></a></div></section>
 
     <section class="ev-contact" id="ev-contatti">
       <div class="ev-layout ev-contact-grid">
@@ -126,7 +134,7 @@
       </div>
     </section>
   </main>
-  <footer class="ev-footer"><div class="ev-layout"><div class="ev-footer-top"><div class="ev-footer-name">E-VINDEMUS<span>✦</span></div><p>UNIQUE IDEAS.<br>LASTING IMPACT.</p></div><div class="ev-footer-bottom"><span>© <span id="ev-year">2026</span> E-vindemus Creative Studio</span><span>PROGETTATO PER DISTINGUERSI</span><a href="#ev-home">Torna all'inizio ↑</a></div></div></footer>
+  <footer class="ev-footer"><div class="ev-layout"><div class="ev-footer-top"><div class="ev-footer-name">E-VINDEMUS<span>✦</span></div><p>UNIQUE IDEAS.<br>LASTING IMPACT.</p></div><div class="ev-footer-bottom"><span>© <span id="ev-year">2026</span> E-vindemus Creative Studio</span><span>PROGETTATO PER DISTINGUERSI</span><a href="index.html">Torna all'inizio ↑</a></div></div></footer>
 </div>
 <style>
 #ev-vindemus{--navy:#08182c;--navy2:#102741;--navy3:#163657;--navy4:#214766;--gold:#d6b16e;--gold2:#f3dbab;--warm:#f7f4ed;--paper:#fffefa;--ink:#162942;--muted:#6d7988;--line:#e6e2d8;background:var(--warm);color:var(--ink);font:400 15px/1.65 'DM Sans',Arial,sans-serif;width:100%;overflow:hidden;isolation:isolate}
@@ -166,7 +174,7 @@
   // CONFIGURA PRIMA DI PUBBLICARE: inserisci il numero WhatsApp completo
   // del prefisso internazionale, SENZA +, zeri iniziali aggiunti o spazi.
   // Esempio puramente illustrativo: const WHATSAPP_NUMERO = '391234567890';
-  const WHATSAPP_NUMERO = '';
+  const WHATSAPP_NUMERO = (window.EV_CONFIG && window.EV_CONFIG.whatsappNumber) || '';
 
   // Solo per la versione incorporata: inserisci l'URL HTTPS del sito
   // pubblicato autonomamente (ad esempio con GitHub Pages).

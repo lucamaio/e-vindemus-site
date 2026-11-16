@@ -1,29 +1,75 @@
-# E-vindemus — sito statico per GitHub Pages
+# E-vindemus · Creative Studio
 
-## Pagine
-- `index.html` — homepage, servizi, pacchetti e collegamenti
-- `chi-siamo.html` — identità, approccio e metodo
-- `portfolio.html` — quattro campagne dimostrative per attività fittizie, con filtri
-- `faq.html` — domande frequenti
-- `contatti.html` — selezione del pacchetto e contatto WhatsApp
+Sito vetrina statico, pubblicato su GitHub Pages, senza framework o build obbligatoria.
+I contenuti sono HTML e le risorse sono divise per responsabilità.
 
-## File condivisi
-- `assets/site-base.css`: stili originali E-vindemus
-- `assets/pages.css`: stile pagine interne, responsive e Liquid Glass
-- `assets/pages.js`: menu, filtri, FAQ native e contatto WhatsApp
-- `assets/config.js`: numero WhatsApp pubblico
+## Struttura
 
-## Prima della pubblicazione
-Apri `assets/config.js` e sostituisci la stringa vuota di `whatsappNumber` con il numero aziendale completo di prefisso internazionale, senza `+` o spazi. Fino ad allora il pulsante rimane inattivo. Non inserire password o segreti nei file del sito pubblico.
+```text
+index.html                Homepage, servizi e pacchetti
+chi-siamo.html            Presentazione dello studio
+portfolio.html            Quattro campagne dimostrative
+faq.html                  Domande frequenti
+contatti.html             Selezione dei piani e WhatsApp
+assets/
+  campagne/              Quattro locandine WebP originali
+  css/
+    base.css              Fondamenta e componenti
+    liquid-glass.css      Effetti glass e animazioni CSS
+    brand.css             Palette verde petrolio e rame
+    whatsapp.css          Sezione di contatto
+    pages.css             Pagine interne
+    icons.css             Icone SVG inline
+    theme.css             Light/Dark Mode
+    campaigns.css         Galleria grafica
+  js/
+    config.js             Numero WhatsApp
+    theme-init.js         Tema iniziale senza flash
+    theme.js              Cambio e persistenza del tema
+    site.js               Menu, filtri, WhatsApp, reveal
+    hero.js               Effetti della sola homepage
+partials/
+  header.html             Modello condiviso di header
+  footer.html             Modello condiviso di footer
+scripts/
+  sync-layout.mjs         Sincronizzazione HTML statico
+  check-site.mjs          Verifica di file e collegamenti
+```
 
-Verifica e conferma prezzi, condizioni di vendita e contenuti commerciali. Le quattro campagne del portfolio sono esempi originali per attività fittizie e non collaborazioni reali.
+## Come intervenire
+
+- **Testi e sezioni:** modifica il rispettivo HTML nella cartella principale.
+- **Header e footer:** modifica i file in `partials/`, poi esegui `node scripts/sync-layout.mjs`. I componenti vengono copiati nel markup statico, leggibile anche senza JavaScript.
+- **CSS:** intervieni sul file di competenza in `assets/css/`.
+- **Comportamenti comuni:** `assets/js/site.js`.
+- **Animazioni della homepage:** `assets/js/hero.js`.
+- **Tema chiaro/scuro:** `assets/css/theme.css`, `assets/js/theme-init.js`, `assets/js/theme.js`.
+- **Immagini:** le quattro campagne in `assets/campagne/` sono usate sia nell'homepage sia nel Portfolio.
+
+**Ordine CSS:** base → liquid-glass → brand → whatsapp → pages → icons → theme → campaigns. La separazione del precedente CSS monolitico è stata eseguita senza cancellare le regole, per preservare la cascata e l'aspetto del sito. Un eventuale consolidamento delle sovrascritture storiche richiede confronti visivi.
+
+### Configurazione WhatsApp
+
+Apri `assets/js/config.js` e imposta il numero aziendale in `whatsappNumber`, con prefisso internazionale ma senza `+` o spazi. Finché è vuoto, il pulsante non apre WhatsApp. Non inserire password o token nei file pubblici.
+
+I pulsanti dei pacchetti in homepage aprono `contatti.html?piano=Starter`, `Business` o `Premium` con un messaggio dedicato.
+
+## Controlli prima della pubblicazione
+
+Serve **Node.js 20+**, senza installare dipendenze:
+
+```sh
+node scripts/sync-layout.mjs --check
+node scripts/check-site.mjs
+```
+
+Verifica anche nel browser menu mobile, filtri del Portfolio, Light/Dark Mode e WhatsApp.
 
 ## GitHub Pages
-Imposta **Settings → Pages → Deploy from a branch → main → /(root)**.
-Indirizzo previsto: https://lucamaio.github.io/e-vindemus-site/
 
-## Tema chiaro e scuro
-Tutte le pagine includono il selettore sole/luna nell'header. Al primo accesso viene utilizzato il tema del dispositivo; le scelte successive vengono salvate localmente nel browser con la chiave `ev-theme`. I file dedicati sono `assets/theme.css` e `assets/theme.js`.
+Il sito viene pubblicato dal branch `main` nella cartella `/(root)`:
+https://lucamaio.github.io/e-vindemus-site/
 
-## Portfolio Fornéo 27
-Le immagini WebP in `assets/campagne/` sono quattro concept originali a scopo dimostrativo per una pizzeria immaginaria: nuova apertura, giro pizza a 15 €, pizza + birra a 18 € e serata musicale. Prezzi, orari e offerte non sono reali. Gli stessi poster sono mostrati nell'homepage e in `portfolio.html` con filtri di categoria. Per cambiare gli asset, sostituire i file WebP mantenendone i nomi oppure aggiornare i percorsi HTML. Le immagini sono ottimizzate a 920 × 920 px.
+## Note sul portfolio
+
+Le quattro grafiche di **Fornéo 27** sono concept per una pizzeria immaginaria: nuova apertura, giro pizza 15 €, pizza e birra 18 € e serata musicale. Prezzi, orari ed eventi sono esempi fittizi, non offerte reali.

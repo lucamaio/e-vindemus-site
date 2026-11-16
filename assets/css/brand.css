@@ -1,0 +1,176 @@
+/* E-VINDEMUS / Verdigris Atelier — verde petrolio, salvia, avorio e rame.
+   Brand redesign: mantiene liquid glass, animazioni e angoli UI <= 16 px. */
+#ev-vindemus{
+  --navy:#132C2A;--navy2:#1D403B;--navy3:#27564D;--navy4:#396B5F;
+  --gold:#B97865;--gold2:#E6B9A8;--warm:#F7F5EF;--paper:#FFFEFA;
+  --ink:#17332F;--muted:#61746E;--line:#E0E4DC;
+  --verdigris:#173B36;--sage:#B6C9B8;--copper:#B97865;--rose:#E6B9A8;
+  background:linear-gradient(155deg,#F8F7F2 0%,#F1F4EE 44%,#F8F2EE 100%);
+}
+#ev-vindemus :focus-visible{outline-color:#9F594A}
+#ev-vindemus h2 em{color:#9F594A}
+#ev-vindemus .ev-section-label{color:#88665D}
+#ev-vindemus .ev-section-label>span{color:#1B5448}
+#ev-vindemus .ev-section-label.ev-light-label{color:#E6C0B1}
+#ev-vindemus .ev-section-label.ev-light-label>span{color:#D6A58E}
+/* A quiet, porcelain-colored translucent navigation */
+#ev-vindemus .ev-header{
+  background:rgba(250,250,245,.78);border-bottom:1px solid rgba(255,255,255,.88);
+  box-shadow:0 7px 30px rgba(22,55,45,.075);
+}
+#ev-vindemus .ev-monogram{
+  background:linear-gradient(140deg,#285D52,#102E2B 85%);
+  color:#F6D6C7;border-color:rgba(230,185,168,.75);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 8px 20px rgba(15,55,45,.18);
+}
+#ev-vindemus .ev-monogram>span{color:#E8B4A4}
+#ev-vindemus .ev-wordmark small{color:#8A716A}
+#ev-vindemus .ev-nav a:hover{color:#9F594A}
+#ev-vindemus .ev-header-cta{
+  background:linear-gradient(115deg,#163B35,#285B50);
+  box-shadow:0 9px 24px rgba(21,60,51,.16);
+}
+#ev-vindemus .ev-header-cta:hover{background:linear-gradient(115deg,#285B50,#397365);box-shadow:0 14px 28px rgba(21,60,51,.22)}
+#ev-vindemus .ev-header-cta span{color:#E6B9A8}
+#ev-vindemus .ev-menu-toggle{color:#173B36;border-color:#C7D3C8;background:rgba(255,255,255,.55)}
+#ev-vindemus .ev-nav.ev-open{box-shadow:0 20px 65px rgba(14,46,39,.16)}
+/* Hero: deep verdigris, copper illumination and fine-grained glass */
+#ev-vindemus .ev-hero{
+  color:#F6F5EF;
+  background:
+    radial-gradient(ellipse 77% 82% at 94% 16%,rgba(76,130,111,.45) 0%,transparent 66%),
+    radial-gradient(ellipse 65% 85% at -12% 104%,rgba(199,122,98,.21) 0%,transparent 65%),
+    linear-gradient(120deg,#0B2524 0%,#123632 51%,#28534A 100%);
+}
+#ev-vindemus .ev-hero:before{
+  background:radial-gradient(ellipse 52% 78% at var(--ev-pointer-x) var(--ev-pointer-y),rgba(238,188,165,.18),transparent 74%);
+}
+#ev-vindemus .ev-hero:after{background:radial-gradient(ellipse,rgba(143,197,169,.21),transparent 66%)}
+#ev-vindemus .ev-hero-copy>p{color:#D7E1D9}
+#ev-vindemus .ev-gold{color:#EDC7B8}
+#ev-vindemus .ev-kicker-line{background:#DAA18D}
+#ev-vindemus .ev-hero h1 em{
+  color:#F6CFBD;
+  background:linear-gradient(102deg,#FFE1D1 5%,#C58B77 34%,#F9D6C0 65%,#D69A84 100%);
+  background-size:210% 100%;-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+#ev-vindemus .ev-hero-under{color:#C5D8CE}
+#ev-vindemus .ev-sparkle{color:#EAB9A5}
+#ev-vindemus .ev-btn-gold{
+  color:#17362F;
+  background:linear-gradient(130deg,#F4D5C5,#D49A83 83%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 10px 29px rgba(191,116,91,.23);
+}
+#ev-vindemus .ev-btn-line{color:#F3F7F1;border-color:rgba(220,242,224,.38);background:rgba(245,255,246,.065)}
+#ev-vindemus .ev-btn-line:hover{background:rgba(245,255,246,.14)}
+#ev-vindemus .ev-hero-composition:before{
+  background:linear-gradient(137deg,rgba(230,255,239,.13),rgba(255,255,255,.018) 44%,rgba(226,158,136,.1));
+  border-color:rgba(240,255,247,.17);
+  box-shadow:inset 0 1px rgba(255,255,255,.23),0 26px 80px rgba(0,24,20,.16);
+}
+#ev-vindemus .ev-orbit{border-color:rgba(236,195,176,.26)}
+#ev-vindemus .ev-hero-poster{border-color:rgba(247,226,216,.65);box-shadow:0 30px 74px rgba(0,19,15,.5),inset 0 1px rgba(255,255,255,.14)}
+#ev-vindemus .ev-hero-poster-a{background:linear-gradient(145deg,#2C655C,#123B37 80%)}
+#ev-vindemus .ev-gold-orb{
+  background:radial-gradient(circle at 28% 25%,#FFE3D4,#D7A18D 47%,#9B5B4B 82%);
+  box-shadow:0 0 70px rgba(223,161,141,.42);
+}
+#ev-vindemus .ev-hero-poster-b{background:linear-gradient(130deg,#EAD2C3,#C68C78)}
+#ev-vindemus .ev-hero-poster-b strong,#ev-vindemus .ev-hero-poster-b>span,#ev-vindemus .ev-hero-poster-b>small{color:#183E37}
+#ev-vindemus .ev-halo{border-color:rgba(255,241,232,.38)}
+#ev-vindemus .ev-stamp{color:#F4CBBB;border-color:rgba(236,193,174,.65);box-shadow:0 8px 38px rgba(0,25,20,.17),inset 0 0 20px rgba(234,186,165,.08)}
+#ev-vindemus .ev-hero-index{color:#D9C0B2}
+#ev-vindemus .ev-ticker{
+  background:linear-gradient(97deg,#EFD3C3,#C9937E 53%,#E7BCAC);
+  color:#183931;border-top-color:rgba(255,255,255,.4);
+}
+/* Breathing room: muted sage + misty clay are the supporting surfaces */
+#ev-vindemus .ev-intro{background:radial-gradient(ellipse 58% 68% at 91% 21%,rgba(199,224,203,.42),transparent 79%)}
+#ev-vindemus .ev-intro-content>p{color:#677A74}
+#ev-vindemus .ev-chips span{
+  color:#476158;border-color:rgba(164,186,164,.55);
+  background:rgba(252,255,251,.66);
+  box-shadow:inset 0 1px rgba(255,255,255,.95),0 4px 18px rgba(14,65,45,.035);
+}
+#ev-vindemus .ev-portfolio:before{background:radial-gradient(ellipse,rgba(190,218,199,.52),transparent 69%)}
+#ev-vindemus .ev-filter{color:#425E52;background:rgba(255,255,255,.62);border-color:rgba(173,198,176,.75)}
+#ev-vindemus .ev-filter.is-active{
+  background:linear-gradient(133deg,#173E36,#347062);border-color:#286052;
+  box-shadow:0 8px 22px rgba(18,73,57,.18);
+}
+#ev-vindemus .ev-project{background:rgba(255,255,253,.8);box-shadow:0 9px 34px rgba(20,63,44,.07),0 1px 2px rgba(10,32,25,.025)}
+#ev-vindemus .ev-project:hover{box-shadow:0 24px 58px rgba(20,63,44,.14)}
+#ev-vindemus .ev-project-arrow{background:linear-gradient(150deg,#FFFFFF,#F1F4EC);box-shadow:inset 0 1px rgba(255,255,255,.95),0 4px 12px rgba(19,65,49,.1)}
+#ev-vindemus .ev-project-info{color:#183B34}
+/* The four distinct original posters intentionally retain their campaign-specific colors. */
+#ev-vindemus .ev-services{
+  background:
+    radial-gradient(ellipse 60% 80% at 100% 6%,rgba(92,153,130,.36),transparent 72%),
+    radial-gradient(ellipse 43% 70% at -9% 89%,rgba(191,120,97,.16),transparent 68%),
+    linear-gradient(142deg,#0C2725,#1A413A 65%,#102E2B);
+}
+#ev-vindemus .ev-services:before{background:radial-gradient(circle,rgba(160,217,183,.2),transparent 68%)}
+#ev-vindemus .ev-service{background:linear-gradient(142deg,rgba(250,255,250,.145),rgba(255,255,255,.027) 83%);border-color:rgba(241,255,244,.21)}
+#ev-vindemus .ev-service:before{background:radial-gradient(circle,rgba(231,183,164,.2),transparent 70%)}
+#ev-vindemus .ev-service-icon{color:#E9BDA8;text-shadow:0 7px 25px rgba(223,152,129,.18)}
+#ev-vindemus .ev-service p{color:#D2DED5}
+#ev-vindemus .ev-services .ev-heading-row>p{color:#CADCD0}
+#ev-vindemus .ev-service:hover{background:linear-gradient(142deg,rgba(248,255,248,.21),rgba(245,255,247,.075) 75%)}
+#ev-vindemus .ev-pricing{background:radial-gradient(ellipse 58% 80% at 110% 38%,rgba(207,226,209,.52),transparent 75%)}
+#ev-vindemus .ev-plan{
+  background:linear-gradient(149deg,rgba(255,255,254,.97),rgba(245,250,243,.77));
+  border-color:rgba(255,255,255,.94);
+  box-shadow:0 15px 48px rgba(28,68,49,.075),0 1px 3px rgba(14,44,31,.03);
+}
+#ev-vindemus .ev-plan:hover{box-shadow:0 25px 60px rgba(28,68,49,.15)}
+#ev-vindemus .ev-plan-highlight{
+  background:
+    radial-gradient(ellipse at 102% 0%,rgba(210,147,124,.26),transparent 46%),
+    linear-gradient(155deg,rgba(40,96,82,.99),rgba(18,56,49,.99) 80%);
+  border-color:rgba(228,177,154,.6);
+  box-shadow:0 23px 65px rgba(13,67,49,.25),inset 0 1px rgba(255,255,255,.19);
+}
+#ev-vindemus .ev-plan-highlight:hover{box-shadow:0 28px 80px rgba(13,67,49,.31)}
+#ev-vindemus .ev-plan-badge{background:linear-gradient(94deg,#F2D7C7,#C88D78 59%,#EED0BF);color:#183D34}
+#ev-vindemus .ev-plan-highlight .ev-plan-btn{background:linear-gradient(118deg,#F9D9C7,#D9A08B);color:#183B32;box-shadow:0 10px 24px rgba(2,34,25,.2)}
+#ev-vindemus .ev-plan:not(.ev-plan-highlight) .ev-plan-btn{background:linear-gradient(116deg,#183E37,#326658)}
+#ev-vindemus .ev-plan-title>small{color:#8C6658}
+#ev-vindemus .ev-price span{color:#6C7F76}
+#ev-vindemus .ev-process{
+  background:linear-gradient(124deg,#E7EFE7 0%,#F7F5EF 51%,#EFE8E2 100%);
+}
+#ev-vindemus .ev-step-mark{background:linear-gradient(120deg,#CE927C,#935B4A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#ev-vindemus .ev-steps article{box-shadow:0 13px 39px rgba(25,71,49,.075),inset 0 1px rgba(255,255,255,.95)}
+#ev-vindemus .ev-steps article:hover{box-shadow:0 19px 47px rgba(25,71,49,.14)}
+#ev-vindemus .ev-faq-items details{border-color:rgba(217,226,216,.95);background:rgba(255,255,252,.7);box-shadow:0 5px 22px rgba(22,63,46,.045)}
+#ev-vindemus .ev-faq-items details[open]{box-shadow:0 13px 35px rgba(22,63,46,.09)}
+#ev-vindemus .ev-faq-items summary span{background:rgba(212,158,138,.18);color:#9F594A}
+#ev-vindemus .ev-contact{
+  background:
+    radial-gradient(ellipse 68% 81% at 0% 14%,rgba(87,148,123,.34),transparent 75%),
+    radial-gradient(ellipse 44% 73% at 100% 100%,rgba(197,119,96,.17),transparent 75%),
+    linear-gradient(126deg,#0D2826,#204A40);
+}
+#ev-vindemus .ev-contact-copy>p{color:#D3E0D6}
+#ev-vindemus .ev-contact-goldmark{color:#E8B8A4}
+#ev-vindemus .ev-contact-panel{
+  background:linear-gradient(145deg,rgba(255,255,252,.95),rgba(242,250,244,.86));
+  box-shadow:0 27px 75px rgba(0,29,19,.31),inset 0 1px rgba(255,255,255,.9);
+}
+#ev-vindemus #ev-contact-form input,#ev-vindemus #ev-contact-form select,#ev-vindemus #ev-contact-form textarea{border-color:#DCE5DA;background:rgba(255,255,253,.76)}
+#ev-vindemus #ev-contact-form input:focus,#ev-vindemus #ev-contact-form select:focus,#ev-vindemus #ev-contact-form textarea:focus{
+  border-color:#BA806A;box-shadow:0 0 0 4px rgba(206,152,131,.16);background:white;
+}
+#ev-vindemus #ev-contact-form button{background:linear-gradient(110deg,#183E36,#32685B)}
+#ev-vindemus .ev-footer{background:linear-gradient(135deg,#0B2422,#18372F)}
+#ev-vindemus .ev-footer-name>span{color:#EABCAA}
+#ev-vindemus .ev-footer-bottom{border-top-color:rgba(220,239,220,.22)}
+/* Selected small interactive states */
+#ev-vindemus .ev-plan-btn:hover,#ev-vindemus #ev-contact-form button:hover{filter:brightness(1.075)}
+@media(max-width:900px){#ev-vindemus .ev-nav.ev-open{background:rgba(247,250,243,.96);border-color:rgba(255,255,255,.95)}}
+@media(prefers-reduced-motion:reduce){#ev-vindemus .ev-hero h1 em{animation:none!important}}
+
+
+
+

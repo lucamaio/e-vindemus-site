@@ -1,0 +1,34 @@
+/* E-vindemus | Pannello WhatsApp, stile Verdigris Atelier, raggi <= 16px */
+#ev-vindemus .ev-whatsapp-panel {
+  background:linear-gradient(145deg,rgba(255,255,252,.95),rgba(243,251,244,.83));
+  border:1px solid rgba(255,255,255,.76);
+  border-radius:16px;
+  backdrop-filter:blur(22px) saturate(135%);
+  -webkit-backdrop-filter:blur(22px) saturate(135%);
+  box-shadow:0 30px 76px rgba(0,27,20,.24),inset 0 1px rgba(255,255,255,.94);
+}
+#ev-vindemus .ev-whatsapp-panel .ev-contact-panel-top{margin-bottom:14px}
+#ev-vindemus .ev-wa-lead{color:#546c60;line-height:1.75;font-size:14px;max-width:490px}
+#ev-vindemus .ev-wa-steps{display:grid;gap:0;margin:26px 0 24px;border-top:1px solid #dce6dd;border-bottom:1px solid #dce6dd}
+#ev-vindemus .ev-wa-steps>div{display:flex;align-items:center;gap:15px;padding:13px 0;font-size:13px;color:#36534a;line-height:1.55}
+#ev-vindemus .ev-wa-steps>div+div{border-top:1px solid rgba(200,216,202,.55)}
+#ev-vindemus .ev-wa-index{font:800 11px 'Manrope',sans-serif;color:#af6c59;letter-spacing:.07em}
+#ev-vindemus .ev-wa-selection{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+#ev-vindemus .ev-wa-selection>span{font-weight:800;letter-spacing:.11em;font-size:10px;color:#7e8f82}
+#ev-vindemus .ev-wa-selection>strong{font-size:12px;color:#204b40;background:rgba(217,234,216,.82);border:1px solid #d2e1d2;padding:8px 12px;border-radius:10px}
+#ev-vindemus .ev-wa-button{display:flex;align-items:center;gap:15px;min-height:75px;padding:14px 20px;border-radius:14px;background:linear-gradient(117deg,#144333,#236f55 65%,#3e8066);color:#fff!important;box-shadow:0 11px 26px rgba(22,83,59,.20),inset 0 1px rgba(255,255,255,.19);transition:transform .28s cubic-bezier(.2,.9,.2,1),box-shadow .28s,filter .28s}
+#ev-vindemus .ev-wa-button:hover{transform:translateY(-3px);box-shadow:0 19px 35px rgba(22,83,59,.26),inset 0 1px rgba(255,255,255,.19);filter:brightness(1.055)}
+#ev-vindemus .ev-wa-button:focus-visible{outline:3px solid #be8f7e;outline-offset:4px}
+#ev-vindemus .ev-wa-button-icon{display:flex;justify-content:center;align-items:center;flex:0 0 auto;width:42px;height:42px;border:1px solid rgba(255,255,255,.27);background:rgba(255,255,255,.11);border-radius:12px}
+#ev-vindemus .ev-wa-button-icon svg{width:23px;height:23px}
+#ev-vindemus .ev-wa-button-label{font-family:'Manrope',sans-serif;font-size:15px;font-weight:800;line-height:1.3}
+#ev-vindemus .ev-wa-button-label small{display:block;margin-top:4px;font:500 11px 'DM Sans',sans-serif;color:#d2eadd}
+#ev-vindemus .ev-wa-button-arrow{margin-left:auto;font-size:24px;color:#e0eadd}
+#ev-vindemus .ev-wa-needs-config{filter:saturate(.65)}
+#ev-vindemus .ev-wa-status{font-size:11px;line-height:1.6;color:#697f73;margin-top:11px;min-height:2.6em}
+#ev-vindemus .ev-wa-privacy{font-size:11px;line-height:1.7;color:#829287;margin-top:15px}
+#ev-vindemus .ev-fullscreen-link{display:flex;justify-content:space-between;gap:16px;padding:14px 0;margin-top:15px;border-top:1px solid #d7e4d7;color:#275649;font-size:12px;font-weight:800}
+#ev-vindemus .ev-fullscreen-link[hidden]{display:none!important}
+#ev-vindemus .ev-fullscreen-link:hover{color:#aa6856}
+@media(max-width:600px){#ev-vindemus .ev-whatsapp-panel{padding:25px 20px}#ev-vindemus .ev-wa-button{gap:10px;padding:12px 13px}#ev-vindemus .ev-wa-button-label{font-size:13px}#ev-vindemus .ev-wa-button-icon{height:39px;width:39px}}
+@media(prefers-reduced-motion:reduce){#ev-vindemus .ev-wa-button{transition:none!important}}

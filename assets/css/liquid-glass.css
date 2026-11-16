@@ -1,0 +1,343 @@
+/* E-VINDEMUS — LIQUID GLASS / NAVY & CHAMPAGNE / v2
+   Raggi degli elementi UI: massimo 16px. I cerchi sono elementi decorativi. */
+#ev-vindemus{
+  --navy:#08182c;--navy2:#102741;--navy3:#163657;
+  --gold:#d6b16e;--gold2:#f3dbab;--warm:#f7f4ed;
+  --paper:#fffefa;--ink:#14263c;--muted:#647486;
+  --ev-ease:cubic-bezier(.22,1,.36,1);
+  background:linear-gradient(155deg,#faf9f5 0%,#f4f7f9 45%,#f9f6ef 100%);
+  font-synthesis:none;
+}
+#ev-vindemus .ev-layout{max-width:1480px}
+#ev-vindemus h2{letter-spacing:-.065em}
+#ev-vindemus .ev-header{
+  position:sticky;top:0;
+  z-index:80;min-height:79px;
+  background:rgba(249,250,251,.78);
+  -webkit-backdrop-filter:blur(22px) saturate(170%);
+  backdrop-filter:blur(22px) saturate(170%);
+  border-bottom:1px solid rgba(255,255,255,.78);
+  box-shadow:0 6px 34px rgba(8,24,44,.055);
+}
+#ev-vindemus .ev-brand{transition:transform .35s var(--ev-ease)}
+#ev-vindemus .ev-brand:hover{transform:translateY(-1px)}
+#ev-vindemus .ev-monogram{
+  border-radius:12px;
+  background:linear-gradient(145deg,#1b405e,#071a2c 65%);
+  border-color:rgba(243,219,171,.7);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.24),0 6px 18px rgba(8,24,44,.16)
+}
+#ev-vindemus .ev-nav a{transition:color .25s ease}
+#ev-vindemus .ev-header-cta{
+  border-radius:12px;
+  background:linear-gradient(125deg,#102941,#173d5a);
+  box-shadow:0 8px 22px rgba(8,24,44,.13);
+  transition:transform .3s var(--ev-ease),box-shadow .3s;
+}
+#ev-vindemus .ev-header-cta:hover{transform:translateY(-2px);box-shadow:0 13px 27px rgba(8,24,44,.19)}
+#ev-vindemus .ev-menu-toggle{border-radius:10px;background:rgba(255,255,255,.48)}
+#ev-vindemus .ev-hero{
+  --ev-pointer-x:65%;--ev-pointer-y:32%;
+  background:
+    radial-gradient(ellipse 70% 70% at 94% 19%,rgba(43,88,126,.48) 0%,transparent 68%),
+    radial-gradient(ellipse 65% 75% at -13% 101%,rgba(184,130,66,.18) 0%,transparent 66%),
+    linear-gradient(120deg,#061426 0%,#0a2137 52%,#112f4a 100%);
+  isolation:isolate;overflow:hidden;
+}
+#ev-vindemus .ev-hero:before{
+  background:radial-gradient(ellipse 48% 70% at var(--ev-pointer-x) var(--ev-pointer-y),rgba(235,200,137,.11),transparent 72%);
+  opacity:.9;z-index:0;
+}
+#ev-vindemus .ev-hero:after{
+  content:"";position:absolute;inset:auto -12% -40% auto;width:55%;height:90%;
+  background:radial-gradient(ellipse,rgba(100,154,194,.19),transparent 67%);
+  pointer-events:none;filter:blur(15px);animation:ev-ambient 12s ease-in-out infinite alternate;z-index:0;
+}
+#ev-vindemus .ev-grain{opacity:.07;background-size:85px 85px;z-index:1}
+#ev-vindemus .ev-hero-main{position:relative;z-index:2;min-height:690px}
+#ev-vindemus .ev-kicker{letter-spacing:1.55px}
+#ev-vindemus .ev-hero h1{letter-spacing:-.078em;text-wrap:balance}
+#ev-vindemus .ev-hero h1 em{
+  color:#f3dbab;
+  background:linear-gradient(100deg,#fff1d0 5%,#c49a55 38%,#f9e7b9 67%,#e0b56a 100%);
+  background-size:210% 100%;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  animation:ev-gold-shift 11s ease-in-out infinite alternate;
+}
+#ev-vindemus .ev-hero-copy>p{color:#cbd8e4}
+#ev-vindemus .ev-hero-under{color:#bac9d7}
+#ev-vindemus .ev-btn,
+#ev-vindemus .ev-plan-btn,
+#ev-vindemus #ev-contact-form button{
+  position:relative;overflow:hidden;border-radius:12px;
+  transition:transform .35s var(--ev-ease),box-shadow .35s var(--ev-ease),background .3s ease;
+}
+#ev-vindemus .ev-btn:after,
+#ev-vindemus .ev-plan-btn:after,
+#ev-vindemus #ev-contact-form button:after{
+  content:"";position:absolute;width:55%;height:210%;left:-80%;top:-52%;transform:rotate(25deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);
+  transition:left .65s var(--ev-ease);pointer-events:none;
+}
+#ev-vindemus .ev-btn:hover:after,
+#ev-vindemus .ev-plan-btn:hover:after,
+#ev-vindemus #ev-contact-form button:hover:after{left:140%}
+#ev-vindemus .ev-btn:hover,#ev-vindemus .ev-plan-btn:hover{transform:translateY(-3px)}
+#ev-vindemus .ev-btn-gold{
+  background:linear-gradient(135deg,#ffe5b0,#d5a65b 85%);
+  color:#122a43;box-shadow:0 10px 30px rgba(208,165,95,.19),inset 0 1px 0 rgba(255,255,255,.7);
+}
+#ev-vindemus .ev-btn-line{
+  background:rgba(255,255,255,.065);
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border:1px solid rgba(238,244,250,.32);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12);
+}
+#ev-vindemus .ev-btn-line:hover{background:rgba(255,255,255,.14)}
+#ev-vindemus .ev-hero-composition{--ev-move-x:0px;--ev-move-y:0px}
+#ev-vindemus .ev-hero-composition:before{
+  content:"";position:absolute;inset:11% 3% 15% 2%;border-radius:16px;
+  background:linear-gradient(140deg,rgba(255,255,255,.09),rgba(255,255,255,.015) 43%,rgba(231,193,126,.09));
+  border:1px solid rgba(255,255,255,.15);box-shadow:inset 0 1px rgba(255,255,255,.16),0 22px 75px rgba(0,0,0,.1);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  transform:rotate(1.5deg);
+}
+#ev-vindemus .ev-hero-poster{
+  border-radius:16px;
+  border:1px solid rgba(255,245,219,.65);
+  box-shadow:0 26px 75px rgba(0,5,21,.45),0 2px 0 rgba(255,255,255,.14) inset;
+  will-change:transform;
+  transition:transform .8s var(--ev-ease),box-shadow .5s;
+}
+#ev-vindemus .ev-hero-poster-a{transform:translate3d(var(--ev-move-a-x,0px),var(--ev-move-a-y,0px),0) rotate(-9deg);background:linear-gradient(145deg,#204a68,#082239)}
+#ev-vindemus .ev-hero-poster-b{transform:translate3d(var(--ev-move-b-x,0px),var(--ev-move-b-y,0px),0) rotate(8deg);background:linear-gradient(130deg,#edce96,#b4854b)}
+#ev-vindemus .ev-hero-poster:hover{box-shadow:0 36px 90px rgba(0,4,17,.52),0 2px 0 rgba(255,255,255,.3) inset}
+#ev-vindemus .ev-stamp{transform:rotate(8deg);box-shadow:0 8px 40px rgba(0,0,0,.15),inset 0 0 20px rgba(230,186,115,.08);-webkit-backdrop-filter:blur(13px);backdrop-filter:blur(13px)}
+#ev-vindemus .ev-hero-index{color:#e4c48b}
+#ev-vindemus .ev-ticker{background:linear-gradient(90deg,#f2dba9,#d6ad65 48%,#f3deb7);border-top:1px solid rgba(255,255,255,.45)}
+#ev-vindemus .ev-intro{
+  background:radial-gradient(ellipse 50% 60% at 93% 30%,rgba(215,230,242,.46),transparent 78%);
+}
+#ev-vindemus .ev-chips span{
+  border-radius:12px;
+  background:rgba(255,255,255,.58);
+  border:1px solid rgba(201,178,133,.48);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 4px 16px rgba(8,24,44,.025);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+}
+#ev-vindemus .ev-portfolio{position:relative}
+#ev-vindemus .ev-portfolio:before{
+  content:"";position:absolute;top:80px;right:-7%;height:600px;width:55%;
+  background:radial-gradient(ellipse,rgba(212,226,239,.46),transparent 66%);pointer-events:none;z-index:0;
+}
+#ev-vindemus .ev-portfolio>*{position:relative;z-index:1}
+#ev-vindemus .ev-filter{
+  border-radius:11px;
+  background:rgba(255,255,255,.59);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid rgba(202,209,217,.72);
+  transition:background .3s,box-shadow .3s,transform .3s var(--ev-ease);
+}
+#ev-vindemus .ev-filter:hover{transform:translateY(-2px)}
+#ev-vindemus .ev-filter.is-active{
+  background:linear-gradient(135deg,#102b45,#24496a);border-color:#24496a;
+  box-shadow:0 7px 17px rgba(9,34,58,.14);
+}
+#ev-vindemus .ev-project{
+  border-radius:16px;
+  padding:8px 8px 4px;
+  border:1px solid rgba(255,255,255,.95);
+  background:rgba(255,255,255,.75);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+  box-shadow:0 8px 32px rgba(22,45,65,.055),0 1px 1px rgba(17,37,58,.035);
+  transition:box-shadow .45s var(--ev-ease),transform .45s var(--ev-ease);
+  overflow:hidden;
+}
+#ev-vindemus .ev-project:hover{transform:translateY(-6px);box-shadow:0 22px 55px rgba(22,45,65,.13)}
+#ev-vindemus .ev-project .ev-art{
+  border-radius:12px;
+  transform:none;
+  overflow:hidden;
+}
+#ev-vindemus .ev-project:hover .ev-art{transform:none}
+#ev-vindemus .ev-project .ev-art svg{
+  transition:transform .7s var(--ev-ease);transform-origin:50% 50%;
+}
+#ev-vindemus .ev-project:hover .ev-art svg{transform:scale(1.055)}
+#ev-vindemus .ev-art-top span{
+  border-radius:9px;padding:7px 9px;
+  background:rgba(10,27,43,.23);
+  border:1px solid rgba(255,255,255,.2);
+  -webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);
+  text-shadow:0 1px 8px rgba(0,0,0,.2)
+}
+#ev-vindemus .ev-art-retail .ev-art-top span{background:rgba(255,255,255,.38);border-color:rgba(255,255,255,.5)}
+#ev-vindemus .ev-project-info{border-bottom:0;padding:19px 12px 15px}
+#ev-vindemus .ev-project-arrow{
+  background:linear-gradient(145deg,#fff,#f6f1e6);
+  box-shadow:inset 0 1px rgba(255,255,255,.9),0 4px 12px rgba(12,32,51,.08);
+  transition:transform .35s var(--ev-ease);
+}
+#ev-vindemus .ev-project:hover .ev-project-arrow{transform:translate(2px,-2px)}
+#ev-vindemus .ev-services{
+  background:
+    radial-gradient(ellipse 58% 83% at 100% 2%,rgba(43,93,137,.42),transparent 68%),
+    radial-gradient(ellipse 40% 66% at -8% 90%,rgba(191,148,83,.12),transparent 68%),
+    linear-gradient(145deg,#071627,#132f49 65%,#081a2f);
+}
+#ev-vindemus .ev-services:before{background:radial-gradient(circle,rgba(146,177,199,.19),transparent 66%);filter:blur(40px)}
+#ev-vindemus .ev-service{
+  position:relative;overflow:hidden;isolation:isolate;
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.035) 75%);
+  border:1px solid rgba(255,255,255,.19);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.21),0 17px 40px rgba(0,0,0,.12);
+  -webkit-backdrop-filter:blur(21px) saturate(140%);backdrop-filter:blur(21px) saturate(140%);
+  transition:transform .45s var(--ev-ease),background .35s,box-shadow .45s;
+}
+#ev-vindemus .ev-service:before{
+  content:"";position:absolute;top:-110px;left:-90px;width:230px;height:230px;
+  border-radius:50%;background:radial-gradient(circle,rgba(237,203,145,.15),transparent 70%);pointer-events:none;
+}
+#ev-vindemus .ev-service:hover{
+  background:linear-gradient(145deg,rgba(255,255,255,.19),rgba(255,255,255,.06) 70%);
+  transform:translateY(-7px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 25px 55px rgba(0,0,0,.2)
+}
+#ev-vindemus .ev-service-icon{color:#f3dfb7;text-shadow:0 7px 30px rgba(233,201,148,.18)}
+#ev-vindemus .ev-service p{color:#c8d4df}
+#ev-vindemus .ev-pricing{
+  background:radial-gradient(ellipse 58% 74% at 110% 43%,rgba(209,226,239,.41),transparent 73%);
+}
+#ev-vindemus .ev-plan{
+  border-radius:16px;overflow:hidden;
+  background:linear-gradient(150deg,rgba(255,255,255,.95),rgba(250,249,245,.73));
+  border:1px solid rgba(255,255,255,.9);
+  box-shadow:0 14px 45px rgba(21,45,66,.07),0 1px 2px rgba(18,40,65,.025);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+  transition:transform .4s var(--ev-ease),box-shadow .4s;
+}
+#ev-vindemus .ev-plan:hover{transform:translateY(-7px);box-shadow:0 24px 60px rgba(21,45,66,.13)}
+#ev-vindemus .ev-plan-highlight{
+  background:
+    radial-gradient(ellipse at 100% 5%,rgba(209,173,104,.18),transparent 40%),
+    linear-gradient(155deg,rgba(28,69,104,.98),rgba(9,30,52,.99) 80%);
+  border:1px solid rgba(219,189,126,.6);
+  box-shadow:0 22px 65px rgba(11,44,72,.23),inset 0 1px 0 rgba(255,255,255,.2);
+}
+#ev-vindemus .ev-plan-highlight:hover{box-shadow:0 29px 80px rgba(11,44,72,.29)}
+#ev-vindemus .ev-plan-badge{
+  position:relative;top:auto;left:auto;right:auto;
+  margin:-31px -26px 30px;padding:11px 15px;
+  background:linear-gradient(90deg,#edd3a2,#c69c5b 60%,#ead3a5);
+  letter-spacing:1.1px;
+}
+#ev-vindemus .ev-plan-highlight .ev-plan-btn{
+  background:linear-gradient(110deg,#ffe8bb,#d9ad67);box-shadow:0 9px 25px rgba(0,0,0,.14);
+}
+#ev-vindemus .ev-plan:not(.ev-plan-highlight) .ev-plan-btn{
+  background:linear-gradient(120deg,#0e2740,#1a4260);
+}
+#ev-vindemus .ev-process{
+  background:linear-gradient(125deg,#edf3f6 0%,#f6f4ed 56%,#eee8da 100%);
+}
+#ev-vindemus .ev-steps article{
+  position:relative;
+  border:1px solid rgba(255,255,255,.91);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(255,255,255,.8),rgba(255,255,255,.35));
+  padding:25px 22px 27px;
+  box-shadow:0 12px 38px rgba(22,45,65,.055),inset 0 1px 0 rgba(255,255,255,.95);
+  -webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);
+  transition:transform .38s var(--ev-ease),box-shadow .38s;
+}
+#ev-vindemus .ev-steps article:hover{transform:translateY(-5px);box-shadow:0 17px 48px rgba(22,45,65,.095)}
+#ev-vindemus .ev-step-mark{background:linear-gradient(120deg,#d2ac69,#8d6b37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#ev-vindemus .ev-faq-items{border-top:0}
+#ev-vindemus .ev-faq-items details{
+  margin:0 0 11px;padding:0 20px;
+  border:1px solid rgba(227,232,236,.85);
+  border-radius:12px;background:rgba(255,255,255,.68);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 5px 22px rgba(20,43,60,.035);
+  -webkit-backdrop-filter:blur(13px);backdrop-filter:blur(13px);
+  transition:box-shadow .3s;
+}
+#ev-vindemus .ev-faq-items details[open]{box-shadow:0 12px 32px rgba(20,43,60,.075)}
+#ev-vindemus .ev-faq-items details[open] p{animation:ev-faq-reveal .3s var(--ev-ease) both}
+@keyframes ev-faq-reveal{from{opacity:.2;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+#ev-vindemus .ev-faq-items summary span{border-radius:9px;background:rgba(218,185,123,.14)}
+#ev-vindemus .ev-contact{
+  background:
+    radial-gradient(ellipse 65% 79% at 0% 15%,rgba(55,112,159,.3),transparent 76%),
+    radial-gradient(ellipse 44% 74% at 100% 100%,rgba(191,148,77,.16),transparent 73%),
+    linear-gradient(126deg,#081a2c,#183a56);
+}
+#ev-vindemus .ev-contact-panel{
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(248,250,252,.85));
+  border:1px solid rgba(255,255,255,.94);
+  box-shadow:0 27px 75px rgba(1,13,29,.29),inset 0 1px rgba(255,255,255,.9);
+  -webkit-backdrop-filter:blur(28px) saturate(150%);backdrop-filter:blur(28px) saturate(150%);
+}
+#ev-vindemus #ev-contact-form input,
+#ev-vindemus #ev-contact-form select,
+#ev-vindemus #ev-contact-form textarea{
+  border-radius:10px;background:rgba(255,255,255,.76);
+  border:1px solid #dfe5e9;
+  transition:border-color .25s,box-shadow .25s,background .25s;
+}
+#ev-vindemus #ev-contact-form input:focus,
+#ev-vindemus #ev-contact-form select:focus,
+#ev-vindemus #ev-contact-form textarea:focus{
+  border-color:#be9c60;box-shadow:0 0 0 4px rgba(215,180,111,.16);background:white;outline:0;
+}
+#ev-vindemus #ev-contact-form button{background:linear-gradient(110deg,#102e49,#225174);border-radius:11px}
+#ev-vindemus .ev-footer{background:linear-gradient(135deg,#061320,#0e263c)}
+/* Motion is progressive: without JS the page remains fully visible. */
+#ev-vindemus.ev-motion .ev-reveal.ev-visible{animation:ev-reveal-up .8s var(--ev-ease) both}
+#ev-vindemus .ev-hero-copy.ev-visible{animation-delay:.06s}
+#ev-vindemus .ev-orbit-1{animation:ev-orbit-rotation 65s linear infinite}
+#ev-vindemus .ev-orbit-2{animation:ev-orbit-counter 48s linear infinite}
+#ev-vindemus .ev-sparkle,#ev-vindemus .ev-contact-goldmark{animation:ev-pulse-soft 5s ease-in-out infinite}
+@keyframes ev-reveal-up{from{opacity:.25;transform:translate3d(0,24px,0);filter:blur(3px)}to{opacity:1;transform:translate3d(0,0,0);filter:blur(0)}}
+@keyframes ev-ambient{from{transform:translate(-3%,3%) scale(.96);opacity:.8}to{transform:translate(5%,-4%) scale(1.11);opacity:1}}
+@keyframes ev-gold-shift{from{background-position:5% 50%}to{background-position:95% 50%}}
+@keyframes ev-orbit-rotation{to{transform:rotate(360deg)}}
+@keyframes ev-orbit-counter{to{transform:rotate(-360deg)}}
+@keyframes ev-pulse-soft{0%,100%{opacity:1;filter:drop-shadow(0 0 0 transparent)}50%{opacity:.7;filter:drop-shadow(0 0 14px rgba(225,188,117,.3))}}
+@media(max-width:900px){
+  #ev-vindemus .ev-header{position:sticky}
+  #ev-vindemus .ev-nav.ev-open{
+    background:rgba(255,255,255,.95);border:1px solid rgba(255,255,255,.95);
+    -webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);
+    border-radius:14px;box-shadow:0 23px 65px rgba(8,24,44,.18);
+  }
+  #ev-vindemus .ev-plan-badge{margin:-31px -26px 27px}
+  #ev-vindemus .ev-hero-composition:before{inset:6% 4% 10% 4%}
+}
+@media(max-width:650px){
+  #ev-vindemus .ev-header{min-height:72px}
+  #ev-vindemus .ev-hero-main{min-height:initial}
+  #ev-vindemus .ev-hero-copy{min-height:480px}
+  #ev-vindemus .ev-hero-composition:before{inset:7% 5% 13%}
+  #ev-vindemus .ev-project{padding:6px 6px 2px}
+  #ev-vindemus .ev-project-info{padding:16px 10px 14px}
+  #ev-vindemus .ev-service{min-height:260px}
+  #ev-vindemus .ev-steps article{padding:22px 18px}
+  #ev-vindemus .ev-plan-badge{margin:-31px -26px 26px}
+}
+@media(hover:none),(pointer:coarse){
+  #ev-vindemus .ev-hero-poster{will-change:auto}
+  #ev-vindemus .ev-project:hover,#ev-vindemus .ev-plan:hover,#ev-vindemus .ev-service:hover,#ev-vindemus .ev-steps article:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+  #ev-vindemus .ev-orbit-1,#ev-vindemus .ev-orbit-2,#ev-vindemus .ev-sparkle,#ev-vindemus .ev-contact-goldmark,#ev-vindemus .ev-hero:after{animation:none!important}
+  #ev-vindemus.ev-motion .ev-reveal.ev-visible{animation:none!important;transform:none!important;filter:none!important;opacity:1!important}
+  #ev-vindemus .ev-hero h1 em{animation:none!important}
+  #ev-vindemus .ev-hero-poster-a{transform:rotate(-9deg)}
+  #ev-vindemus .ev-hero-poster-b{transform:rotate(8deg)}
+}
+
+
+
+

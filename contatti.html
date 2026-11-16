@@ -2,21 +2,25 @@
 <html lang="it"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Richiedi un preventivo per grafiche pubblicitarie, social e pacchetti mensili E-vindemus."><meta name="theme-color" content="#132C2A">
-<script>
-/* Seleziona il tema prima del rendering per evitare il flash del tema errato. */
-(function(){var t;try{t=localStorage.getItem('ev-theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-ev-theme',t);document.documentElement.style.colorScheme=t})();
-</script>
+<script src="assets/js/theme-init.js"></script>
 <meta property="og:type" content="website"><meta property="og:title" content="Contattaci | E-vindemus"><meta property="og:description" content="Richiedi un preventivo per grafiche pubblicitarie, social e pacchetti mensili E-vindemus.">
 <title>Contattaci | E-vindemus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site-base.css"><link rel="stylesheet" href="assets/pages.css">
-<script defer src="assets/config.js"></script><script defer src="assets/pages.js"></script>
-<link rel="stylesheet" href="assets/icons.css">
-<link rel="stylesheet" href="assets/theme.css">
-<script defer src="assets/theme.js"></script>
-</head><body><div id="ev-vindemus"><header class="ev-header">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/liquid-glass.css">
+<link rel="stylesheet" href="assets/css/brand.css">
+<link rel="stylesheet" href="assets/css/whatsapp.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/icons.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/campaigns.css">
+<script defer src="assets/js/config.js"></script>
+<script defer src="assets/js/site.js"></script>
+<script defer src="assets/js/theme.js"></script>
+</head><body><div id="ev-vindemus">
+<header class="ev-header">
 <a class="ev-brand" href="index.html" aria-label="E-vindemus: torna alla homepage"><span class="ev-monogram">E<span>✦</span></span><span class="ev-wordmark">E-VINDEMUS<small>CREATIVE STUDIO</small></span></a>
 <nav class="ev-nav" id="ev-navigation" aria-label="Navigazione principale">
 <a href="index.html">Home</a>
@@ -30,9 +34,13 @@
 <a class="ev-header-cta" href="contatti.html">Parliamo del tuo brand <span aria-hidden="true"><svg class="ev-icon ev-icon--arrow-up-right" data-icon="arrow-up-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
 <button class="ev-theme-toggle" type="button" aria-label="Attiva il tema scuro" aria-pressed="false" title="Attiva il tema scuro"><svg class="ev-icon ev-theme-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.99 13.05A9 9 0 0 1 10.95 3.01 9 9 0 1 0 20.99 13.05Z"/></svg><svg class="ev-icon ev-theme-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><span class="ev-theme-label">Chiaro</span></button>
 <button class="ev-menu-toggle" type="button" aria-expanded="false" aria-controls="ev-navigation" aria-label="Apri il menu"><svg class="ev-icon ev-icon--menu ev-icon-menu" data-icon="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="ev-icon ev-icon--x ev-icon-close" data-icon="x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
-</header><main id="ev-main"><section class="ev-inner-hero"><div class="ev-layout"><div class="ev-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contatti</span></div><div class="ev-page-kicker">04 / E-VINDEMUS CREATIVE STUDIO</div><h1>Iniziamo qualcosa<br>di <em>speciale.</em></h1><p>Un progetto singolo oppure un pacchetto mensile: raccontaci come immagini la comunicazione della tua attività.</p></div></section>
+</header>
+<main id="ev-main">
+<section class="ev-inner-hero"><div class="ev-layout"><div class="ev-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contatti</span></div><div class="ev-page-kicker">04 / E-VINDEMUS CREATIVE STUDIO</div><h1>Iniziamo qualcosa<br>di <em>speciale.</em></h1><p>Un progetto singolo oppure un pacchetto mensile: raccontaci come immagini la comunicazione della tua attività.</p></div>
+</section>
 <section class="ev-page-section ev-layout" style="padding-bottom:62px"><div class="ev-section-label"><span>01</span> / SCEGLI DA DOVE PARTIRE</div><h2>Un piano per<br><em>ogni esigenza.</em></h2><p class="ev-page-lead">Seleziona il pacchetto più adatto. Prepareremo un messaggio WhatsApp personalizzato con la tua scelta.</p>
-<div class="ev-plan-choices" role="group" aria-label="Scegli un piano"><a href="?piano=Starter" data-select-plan="Starter">Starter · 89 €/mese</a><a href="?piano=Business" data-select-plan="Business">Business · 169 €/mese</a><a href="?piano=Premium" data-select-plan="Premium">Premium · 249 €/mese</a><a href="contatti.html" data-select-plan="Personalizzato">Progetto su misura</a></div></section>
+<div class="ev-plan-choices" role="group" aria-label="Scegli un piano"><a href="?piano=Starter" data-select-plan="Starter">Starter · 89 €/mese</a><a href="?piano=Business" data-select-plan="Business">Business · 169 €/mese</a><a href="?piano=Premium" data-select-plan="Premium">Premium · 249 €/mese</a><a href="contatti.html" data-select-plan="Personalizzato">Progetto su misura</a></div>
+</section>
 <section class="ev-contact ev-contact--page" id="ev-contatti">
       <div class="ev-layout ev-contact-grid">
         <div class="ev-contact-copy ev-reveal">
@@ -74,6 +82,16 @@
           <p class="ev-wa-privacy">Il pulsante apre WhatsApp in una nuova scheda o nell'app, se disponibile. Nessun dato viene raccolto da questa pagina.</p>
         </div>
       </div>
-    </section>
-<section class="ev-page-section ev-layout"><div class="ev-section-label"><span>02</span> / PREPARA LA TUA RICHIESTA</div><h2>Ci bastano poche<br><em>informazioni.</em></h2><div class="ev-contact-checklist"><article><strong>01 / ATTIVITÀ</strong><h3>Chi sei</h3><p>Il settore della tua attività: ristorazione, ospitalità, negozi o altro.</p></article><article><strong>02 / OBIETTIVO</strong><h3>Cosa vuoi ottenere</h3><p>Una promozione, un evento, nuove grafiche social o un progetto più ampio.</p></article><article><strong>03 / MATERIALI</strong><h3>Da dove iniziamo</h3><p>Logo, fotografie, contenuti e riferimenti stilistici, se già disponibili.</p></article></div><div class="ev-page-actions"><a class="ev-page-button ev-page-button--line" href="faq.html">Leggi le FAQ <span><svg class="ev-icon ev-icon--arrow-up-right" data-icon="arrow-up-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a><a class="ev-page-button ev-page-button--line" href="portfolio.html">Esplora il portfolio <span><svg class="ev-icon ev-icon--arrow-up-right" data-icon="arrow-up-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a></div></section>
-</main><footer class="ev-footer"><div class="ev-layout"><div class="ev-footer-top"><div class="ev-footer-name">E-VINDEMUS<span>✦</span></div><p>UNIQUE IDEAS.<br>LASTING IMPACT.</p></div><div class="ev-footer-bottom"><span>© <span id="ev-year">2026</span> E-vindemus Creative Studio</span><span>PROGETTATO PER DISTINGUERSI</span><a href="index.html">Torna all'inizio <svg class="ev-icon ev-icon--arrow-up" data-icon="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></a></div></div></footer></div></body></html>
+</section>
+<section class="ev-page-section ev-layout"><div class="ev-section-label"><span>02</span> / PREPARA LA TUA RICHIESTA</div><h2>Ci bastano poche<br><em>informazioni.</em></h2><div class="ev-contact-checklist">
+<article><strong>01 / ATTIVITÀ</strong><h3>Chi sei</h3><p>Il settore della tua attività: ristorazione, ospitalità, negozi o altro.</p>
+</article>
+<article><strong>02 / OBIETTIVO</strong><h3>Cosa vuoi ottenere</h3><p>Una promozione, un evento, nuove grafiche social o un progetto più ampio.</p>
+</article>
+<article><strong>03 / MATERIALI</strong><h3>Da dove iniziamo</h3><p>Logo, fotografie, contenuti e riferimenti stilistici, se già disponibili.</p>
+</article>
+</div><div class="ev-page-actions"><a class="ev-page-button ev-page-button--line" href="faq.html">Leggi le FAQ <span><svg class="ev-icon ev-icon--arrow-up-right" data-icon="arrow-up-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a><a class="ev-page-button ev-page-button--line" href="portfolio.html">Esplora il portfolio <span><svg class="ev-icon ev-icon--arrow-up-right" data-icon="arrow-up-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a></div>
+</section>
+</main>
+<footer class="ev-footer"><div class="ev-layout"><div class="ev-footer-top"><div class="ev-footer-name">E-VINDEMUS<span>✦</span></div><p>UNIQUE IDEAS.<br>LASTING IMPACT.</p></div><div class="ev-footer-bottom"><span>© <span id="ev-year">2026</span> E-vindemus Creative Studio</span><span>PROGETTATO PER DISTINGUERSI</span><a href="index.html">Torna all'inizio <svg class="ev-icon ev-icon--arrow-up" data-icon="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></a></div></div></footer>
+</div></body></html>

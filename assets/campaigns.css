@@ -1,0 +1,29 @@
+/* E-vindemus — Portfolio Fornéo 27 / graphics showcase */
+#ev-vindemus .ev-poster-frame{
+ display:block;position:relative;overflow:hidden;aspect-ratio:1/1;width:100%;border-radius:14px;
+ background:linear-gradient(125deg,#1b3930,#3e6454);isolation:isolate;
+}
+#ev-vindemus .ev-portfolio-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .55s cubic-bezier(.2,.8,.2,1);border-radius:14px;}
+#ev-vindemus .ev-project:hover .ev-portfolio-image{transform:scale(1.035)}
+#ev-vindemus .ev-poster-expand{
+ position:absolute;display:flex;align-items:center;justify-content:center;right:16px;top:16px;width:39px;height:39px;
+ border-radius:12px;color:#172d25;background:rgba(255,255,255,.84);
+ border:1px solid rgba(255,255,255,.88);box-shadow:0 5px 19px rgba(0,0,0,.13);
+ -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+ opacity:0;transform:translateY(5px);transition:opacity .25s,transform .25s;
+}
+#ev-vindemus .ev-poster-expand .ev-icon{width:19px;height:19px}
+#ev-vindemus .ev-project:hover .ev-poster-expand,
+#ev-vindemus .ev-poster-frame:focus-visible .ev-poster-expand{opacity:1;transform:translateY(0)}
+#ev-vindemus .ev-project[hidden]{display:none!important}
+#ev-vindemus .ev-project .ev-project-arrow{cursor:pointer}
+#ev-vindemus .ev-hero-poster.ev-hero-campaign{
+ display:block;padding:0;overflow:hidden;isolation:isolate;
+ box-shadow:0 25px 58px rgba(0,0,0,.38);border:1px solid rgba(248,237,223,.53);
+}
+#ev-vindemus .ev-hero-poster.ev-hero-campaign img{
+ display:block;width:100%;height:100%;object-fit:cover;object-position:center;
+}
+#ev-vindemus .ev-hero-poster.ev-hero-campaign:hover{filter:brightness(1.045)}
+@media(hover:none){#ev-vindemus .ev-poster-expand{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){#ev-vindemus .ev-portfolio-image,#ev-vindemus .ev-poster-expand{transition:none!important}}

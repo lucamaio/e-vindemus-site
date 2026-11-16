@@ -1,0 +1,30 @@
+
+/* E-vindemus — SVG Lucide coerenti, senza librerie JavaScript esterne */
+#ev-vindemus .ev-icon{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.18em;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#ev-vindemus .ev-menu-toggle{align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:9px}
+#ev-vindemus .ev-menu-toggle .ev-icon{width:23px;height:23px}
+#ev-vindemus .ev-menu-toggle .ev-icon-close{display:none}
+#ev-vindemus .ev-menu-toggle[aria-expanded="true"] .ev-icon-menu{display:none}
+#ev-vindemus .ev-menu-toggle[aria-expanded="true"] .ev-icon-close{display:inline-block}
+#ev-vindemus .ev-service-icon{line-height:1}
+#ev-vindemus .ev-service-icon .ev-icon{width:57px;height:57px;filter:drop-shadow(0 7px 20px rgba(216,151,125,.16))}
+#ev-vindemus .ev-step-mark{background:none!important;-webkit-background-clip:initial!important;background-clip:initial!important;-webkit-text-fill-color:initial!important;color:#ab705b}
+#ev-vindemus .ev-step-mark .ev-icon{width:50px;height:50px;stroke:#ab705b}
+#ev-vindemus .ev-plan-title .ev-icon{width:24px;height:24px;color:#b27660}
+#ev-vindemus .ev-plan-highlight .ev-plan-title .ev-icon{color:#f1cbb9}
+#ev-vindemus .ev-project-arrow .ev-icon{width:21px;height:21px}
+#ev-vindemus .ev-art-corner .ev-icon{width:31px;height:31px}
+#ev-vindemus .ev-contact-goldmark{display:block}
+#ev-vindemus .ev-contact-goldmark .ev-icon{width:96px;height:96px;stroke:#e8b8a4;stroke-width:1.1}
+#ev-vindemus .ev-sparkle .ev-icon{width:22px;height:22px}
+#ev-vindemus .ev-wa-button-arrow .ev-icon{width:23px;height:23px}
+#ev-vindemus .ev-service-head>span:last-child .ev-icon{width:17px;height:17px}
+#ev-vindemus .ev-faq-items summary span .ev-icon{width:18px;height:18px}
+#ev-vindemus .ev-faq-group summary span .ev-icon{width:20px;height:20px}
+#ev-vindemus .ev-plan ul li:before{content:none!important;display:none!important}
+#ev-vindemus .ev-plan li{display:flex;align-items:flex-start;gap:10px}
+#ev-vindemus .ev-list-check{width:17px;height:17px;stroke:#b27660;flex:0 0 17px;margin-top:2px}
+#ev-vindemus .ev-plan-highlight .ev-list-check{stroke:#eac6b2}
+#ev-vindemus .ev-footer-bottom a .ev-icon{width:15px;height:15px}
+@media(max-width:680px){#ev-vindemus .ev-service-icon .ev-icon{width:43px;height:43px}#ev-vindemus .ev-step-mark .ev-icon{width:43px;height:43px}}
+@media(prefers-reduced-motion:reduce){#ev-vindemus .ev-icon{transition:none!important;animation:none!important}}

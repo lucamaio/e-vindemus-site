@@ -2,6 +2,10 @@
 <html lang="it"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="E-vindemus: studio creativo digitale che unisce grafica, direzione artistica e intelligenza artificiale."><meta name="theme-color" content="#132C2A">
+<script>
+/* Seleziona il tema prima del rendering per evitare il flash del tema errato. */
+(function(){var t;try{t=localStorage.getItem('ev-theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-ev-theme',t);document.documentElement.style.colorScheme=t})();
+</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Chi siamo | E-vindemus"><meta property="og:description" content="E-vindemus: studio creativo digitale che unisce grafica, direzione artistica e intelligenza artificiale.">
 <title>Chi siamo | E-vindemus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +14,8 @@
 <link rel="stylesheet" href="assets/site-base.css"><link rel="stylesheet" href="assets/pages.css">
 <script defer src="assets/config.js"></script><script defer src="assets/pages.js"></script>
 <link rel="stylesheet" href="assets/icons.css">
+<link rel="stylesheet" href="assets/theme.css">
+<script defer src="assets/theme.js"></script>
 </head><body><div id="ev-vindemus"><header class="ev-header">
 <a class="ev-brand" href="index.html" aria-label="E-vindemus: torna alla homepage"><span class="ev-monogram">E<span>✦</span></span><span class="ev-wordmark">E-VINDEMUS<small>CREATIVE STUDIO</small></span></a>
 <nav class="ev-nav" id="ev-navigation" aria-label="Navigazione principale">
@@ -22,6 +28,7 @@
 <a href="contatti.html">Contatti</a>
 </nav>
 <a class="ev-header-cta" href="contatti.html">Parliamo del tuo brand <span aria-hidden="true"><svg class="ev-icon ev-icon--arrow-up-right" data-icon="arrow-up-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span></a>
+<button class="ev-theme-toggle" type="button" aria-label="Attiva il tema scuro" aria-pressed="false" title="Attiva il tema scuro"><svg class="ev-icon ev-theme-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.99 13.05A9 9 0 0 1 10.95 3.01 9 9 0 1 0 20.99 13.05Z"/></svg><svg class="ev-icon ev-theme-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><span class="ev-theme-label">Chiaro</span></button>
 <button class="ev-menu-toggle" type="button" aria-expanded="false" aria-controls="ev-navigation" aria-label="Apri il menu"><svg class="ev-icon ev-icon--menu ev-icon-menu" data-icon="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="ev-icon ev-icon--x ev-icon-close" data-icon="x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
 </header><main id="ev-main"><section class="ev-inner-hero"><div class="ev-layout"><div class="ev-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Chi siamo</span></div><div class="ev-page-kicker">01 / E-VINDEMUS CREATIVE STUDIO</div><h1>Un'identità forte.<br><em>Una nuova prospettiva.</em></h1><p>E-vindemus è uno studio creativo digitale che unisce direzione artistica, design e intelligenza artificiale per dare valore alla comunicazione delle attività.</p></div></section>
 <section class="ev-layout ev-page-section"><div class="ev-section-label"><span>01</span> / IL NOSTRO APPROCCIO</div><h2>Non soltanto grafiche.<br><em>Storie da riconoscere.</em></h2><p class="ev-page-lead">Ogni attività ha qualcosa di particolare da raccontare. Il nostro compito è trasformarlo in un linguaggio visivo contemporaneo: autentico, coerente e capace di distinguersi.</p>

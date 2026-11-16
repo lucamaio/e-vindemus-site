@@ -21,3 +21,6 @@ Verifica e conferma prezzi, condizioni di vendita e contenuti commerciali. Le qu
 ## GitHub Pages
 Imposta **Settings → Pages → Deploy from a branch → main → /(root)**.
 Indirizzo previsto: https://lucamaio.github.io/e-vindemus-site/
+
+## Tema chiaro e scuro
+Tutte le pagine includono il selettore sole/luna nell'header. Al primo accesso viene utilizzato il tema del dispositivo; le scelte successive vengono salvate localmente nel browser con la chiave `ev-theme`. I file dedicati sono `assets/theme.css` e `assets/theme.js`.

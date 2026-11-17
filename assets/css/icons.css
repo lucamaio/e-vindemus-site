@@ -28,3 +28,20 @@
 #ev-vindemus .ev-footer-bottom a .ev-icon{width:15px;height:15px}
 @media(max-width:680px){#ev-vindemus .ev-service-icon .ev-icon{width:43px;height:43px}#ev-vindemus .ev-step-mark .ev-icon{width:43px;height:43px}}
 @media(prefers-reduced-motion:reduce){#ev-vindemus .ev-icon{transition:none!important;animation:none!important}}
+
+/* Icone inline della navigazione: ereditano il colore del testo in entrambi i temi. */
+#ev-vindemus .ev-nav .ev-nav-icon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  color: inherit;
+  stroke: currentColor;
+}
+@media (max-width: 1180px) {
+  #ev-vindemus .ev-nav .ev-nav-icon {
+    width: 19px;
+    height: 19px;
+    flex-basis: 19px;
+  }
+}

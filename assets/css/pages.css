@@ -68,3 +68,20 @@
 @media(max-width:780px){#ev-vindemus .ev-page-section{padding-top:75px;padding-bottom:80px}#ev-vindemus .ev-story{grid-template-columns:1fr;gap:30px}#ev-vindemus .ev-faq-group{grid-template-columns:1fr;gap:10px}#ev-vindemus .ev-page-cta .ev-layout{display:block}#ev-vindemus .ev-page-cta .ev-page-button{margin-top:24px}#ev-vindemus .ev-inner-hero .ev-layout{padding-top:70px;padding-bottom:70px}}
 @media(max-width:580px){#ev-vindemus .ev-feature-grid,#ev-vindemus .ev-contact-checklist,#ev-vindemus .ev-concept-grid{grid-template-columns:1fr}#ev-vindemus .ev-story-art{height:285px}#ev-vindemus .ev-inner-hero h1{font-size:clamp(39px,9vw,54px)}#ev-vindemus .ev-page-cta .ev-page-button{white-space:normal}}
 @media(prefers-reduced-motion:reduce){#ev-vindemus .ev-page-button,#ev-vindemus .ev-plan-choices a{transition:none!important}}
+
+/* Servizi, pacchetti e anteprime della homepage. */
+#ev-vindemus .ev-service-details{grid-template-columns:repeat(2,minmax(0,1fr))}
+#ev-vindemus .ev-home-plans .ev-plan{display:flex;flex-direction:column;min-height:0}
+#ev-vindemus .ev-home-plans .ev-price{margin:18px 0 12px}
+#ev-vindemus .ev-home-plans .ev-plan-btn{margin-top:22px}
+#ev-vindemus .ev-services .ev-section-more .ev-page-button{background:#f7e4d7;color:#17372e!important}
+#ev-vindemus .ev-compare-wrap{margin-top:36px;overflow-x:auto;border:1px solid #d3e1d8;border-radius:16px;background:rgba(255,255,255,.76);box-shadow:0 15px 43px rgba(20,63,48,.08)}
+#ev-vindemus .ev-compare{width:100%;min-width:620px;border-collapse:collapse;text-align:left;font-size:14px}
+#ev-vindemus .ev-compare caption{text-align:left;padding:20px 22px;font-weight:800}
+#ev-vindemus .ev-compare th,#ev-vindemus .ev-compare td{padding:17px 20px;border-top:1px solid #d3e1d8;vertical-align:middle}
+#ev-vindemus .ev-compare thead{background:#25594b;color:#fff}
+#ev-vindemus .ev-compare-link{font-weight:800;color:#24584a;text-decoration:underline;text-underline-offset:4px}
+:root[data-ev-theme="dark"] #ev-vindemus .ev-compare-wrap{background:rgba(29,55,47,.85);border-color:#426557}
+:root[data-ev-theme="dark"] #ev-vindemus .ev-compare th,:root[data-ev-theme="dark"] #ev-vindemus .ev-compare td{border-color:#426557;color:#eff4ed}
+:root[data-ev-theme="dark"] #ev-vindemus .ev-compare-link{color:#f1c6b4}
+@media(max-width:680px){#ev-vindemus .ev-service-details{grid-template-columns:1fr}#ev-vindemus .ev-compare th,#ev-vindemus .ev-compare td{padding:14px 15px}}

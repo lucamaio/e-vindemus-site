@@ -6,9 +6,11 @@ I contenuti sono HTML e le risorse sono divise per responsabilità.
 ## Struttura
 
 ```text
-index.html                Homepage, servizi e pacchetti
+index.html                Homepage e anteprime delle pagine
 chi-siamo.html            Presentazione dello studio
 portfolio.html            Quattro campagne dimostrative
+servizi.html              Servizi e metodo creativo
+pacchetti.html            Piani mensili e confronto
 faq.html                  Domande frequenti
 contatti.html             Selezione dei piani e WhatsApp
 assets/
@@ -52,7 +54,7 @@ scripts/
 
 Apri `assets/js/config.js` e imposta il numero aziendale in `whatsappNumber`, con prefisso internazionale ma senza `+` o spazi. Finché è vuoto, il pulsante non apre WhatsApp. Non inserire password o token nei file pubblici.
 
-I pulsanti dei pacchetti in homepage aprono `contatti.html?piano=Starter`, `Business` o `Premium` con un messaggio dedicato.
+I pulsanti di richiesta nella pagina Pacchetti aprono `contatti.html?piano=Starter`, `Business` o `Premium` con un messaggio dedicato.
 
 ## Controlli prima della pubblicazione
 

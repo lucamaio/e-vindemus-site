@@ -8,7 +8,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const pages = ["index.html", "chi-siamo.html", "portfolio.html", "faq.html", "contatti.html"];
+const pages = ["index.html", "chi-siamo.html", "portfolio.html", "faq.html", "contatti.html", "servizi.html", "pacchetti.html"];
 const header = readFileSync(resolve(root, "partials/header.html"), "utf8").trim();
 const footer = readFileSync(resolve(root, "partials/footer.html"), "utf8").trim();
 const dryRun = process.argv.includes("--check");

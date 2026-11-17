@@ -7,7 +7,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const pages = ["index.html", "chi-siamo.html", "portfolio.html", "faq.html", "contatti.html"];
+const pages = ["index.html", "chi-siamo.html", "portfolio.html", "faq.html", "contatti.html", "servizi.html", "pacchetti.html"];
 const styles = ["base", "liquid-glass", "brand", "whatsapp", "pages", "icons", "theme", "campaigns"];
 const posters = ["forneo-nuova-apertura", "forneo-giro-pizza-15", "forneo-pizza-birra-18", "forneo-serata-speciale"];
 const errors = [];
@@ -32,7 +32,7 @@ for (const page of pages) {
   for (const match of html.matchAll(/(?:src|href)="(assets\/[^"#?]+)"/g)) {
     check(existsSync(resolve(root, match[1])), page + ": asset non trovato " + match[1]);
   }
-  for (const match of html.matchAll(/href="((?:index|chi-siamo|portfolio|faq|contatti)\.html)(?:#[^"]*)?"/g)) {
+  for (const match of html.matchAll(/href="((?:index|chi-siamo|portfolio|faq|contatti|servizi|pacchetti)\.html)(?:#[^"]*)?"/g)) {
     check(existsSync(resolve(root, match[1])), page + ": collegamento mancante " + match[1]);
   }
 
@@ -42,6 +42,15 @@ for (const page of pages) {
       check(html.includes(poster + ".webp"), page + ": grafica non presente " + poster);
     }
   }
+}
+const landing = readFileSync(resolve(root, "index.html"), "utf8");
+const landingMain = landing.match(/<main\b[^>]*>[\s\S]*?<\/main>/)?.[0] || "";
+for (const page of pages.filter(p => p !== "index.html")) {
+  check(landingMain.includes('href="' + page + '"'), "Homepage: manca il collegamento a " + page);
+}
+const packages = readFileSync(resolve(root, "pacchetti.html"), "utf8");
+for (const plan of ["Starter", "Business", "Premium"]) {
+  check(packages.includes("contatti.html?piano=" + plan), "Pacchetti: richiesta mancante per " + plan);
 }
 const contacts = readFileSync(resolve(root, "contatti.html"), "utf8");
 check(contacts.includes('id="ev-whatsapp-button"'), "Contatti: WhatsApp mancante");
